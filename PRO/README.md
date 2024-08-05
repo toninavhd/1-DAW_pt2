@@ -1,0 +1,2 @@
+# PROGRAMACIÓN.
+Aqui estaré subiendo mis ejercicios tanto de clase como lo que haga durante el curso en casa. Intentaré dividirlo por temas y usar esto de índice para que me sea mas cómodo de estudiar.
