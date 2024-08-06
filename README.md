@@ -8,7 +8,7 @@
  <p align="center">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</p>
 
  <p> Este repositorio esta dedicado para guardar mis apuntes y ejercicios realizados en el curso 2024/2025 de DAW. </p>
-
+<h3 align="left"><img src="https://64.media.tumblr.com/0b6f86f148e81c42a4649e2e290fb0fa/d0745e618a8e6ac7-3b/s250x400/aab06a4704af08a97f019af8133ca0e9788ff2ad.gifv"/></h3> 
 <h3 align="center">▓▓▓▓▒▒▒▒░░░░ 𝘼𝙨𝙞𝙜𝙣𝙖𝙩𝙪𝙧𝙖𝙨 ░░░░▒▒▒▒▓▓▓▓</h3>
 <h3>
  <ul>
@@ -21,6 +21,4 @@
 <h3 align="center"><img src="https://web.archive.org/web/20090902072522/http://geocities.com/revival_center/bar.gif"/></h3>
 
 <h3 align="center"><img src="https://64.media.tumblr.com/86939b0b07a11441d4f3f6e2327d64f7/83ea30d739c890e8-66/s400x600/a2094bd5386ed8b0c5c66177217fdd8113e6bcc5.pnj"/></h3>
-
-<h3 align="left"><img src="https://64.media.tumblr.com/0b6f86f148e81c42a4649e2e290fb0fa/d0745e618a8e6ac7-3b/s250x400/aab06a4704af08a97f019af8133ca0e9788ff2ad.gifv"/></h3> 
 
