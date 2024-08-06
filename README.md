@@ -1,5 +1,7 @@
-
 <h2 align="center"> 𝟭º 𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗼 𝗔𝗽𝗹𝗶𝗰𝗮𝗰𝗶𝗼𝗻𝗲𝘀 𝗪𝗲𝗯 ( 𝐈𝐈 ) </h2>
+
+<h3 align="center"><img src="https://web.archive.org/web/20090902072522/http://geocities.com/revival_center/bar.gif"/></h3>
+ 
 
 <h3 align="center"><img src="https://web.archive.org/web/20090902072522/http://geocities.com/revival_center/bar.gif"/></h3>
 
@@ -7,10 +9,11 @@
 
 
  <h3 align="center"> <img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/>  ﻿ｈｅｌｌｏ  ｗｏｒｌｄ！<img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/> </h3>
+ <p align="center">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</p>
 
- <p> Este repositorio esta dedicado a mis apuntes y ejercicios realizados en el curso 2024/2025 de DAW </p>
+ <p> Este repositorio esta dedicado para guardar mis apuntes y ejercicios realizados en el curso 2024/2025 de DAW. </p>
 
-<h3> 𝘼𝙨𝙞𝙜𝙣𝙖𝙩𝙪𝙧𝙖𝙨: </h3>
+<h3 align="center">▓▓▓▓▒▒▒▒░░░░ 𝘼𝙨𝙞𝙜𝙣𝙖𝙩𝙪𝙧𝙖𝙨 ░░░░▒▒▒▒▓▓▓▓</h3>
 <h3>
  <ul>
     <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO"> PRO </a></li>
