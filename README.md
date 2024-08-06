@@ -1,8 +1,4 @@
 <h2 align="center"> 𝟭º 𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗼 𝗔𝗽𝗹𝗶𝗰𝗮𝗰𝗶𝗼𝗻𝗲𝘀 𝗪𝗲𝗯 ( 𝐈𝐈 ) </h2>
-
-<h3 align="center"><img src="https://web.archive.org/web/20090902072522/http://geocities.com/revival_center/bar.gif"/></h3>
- 
-
 <h3 align="center"><img src="https://web.archive.org/web/20090902072522/http://geocities.com/revival_center/bar.gif"/></h3>
 
  <h3 align="center"><img src="https://64.media.tumblr.com/bfdc4e2311c4384ce7bcce84566431d6/5731f5271018f856-d5/s1280x1920/6ccbbc865e0da8b250fedc1abb514b06c9ec9a5b.gifv"/></h3>
