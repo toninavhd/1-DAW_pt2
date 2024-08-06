@@ -10,8 +10,8 @@
 <h3> 𝘼𝙨𝙞𝙜𝙣𝙖𝙩𝙪𝙧𝙖𝙨: </h3>
 <h3>
  <ul>
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO"> Programación</a></li>
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/BAE"> Base De Datos</a></li> 
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO"> 𝙿𝚛𝚘𝚐𝚛𝚊𝚖𝚊𝚌𝚒𝚘́𝚗.</a></li>
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/BAE"> 𝔅𝔞𝔰𝔢 𝔇𝔢 𝔇𝔞𝔱𝔬𝔰</a></li> 
  </ul>
 </h3>
 
