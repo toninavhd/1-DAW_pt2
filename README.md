@@ -3,7 +3,7 @@
 
 <h3 align="center"><img src="https://web.archive.org/web/20090902072522/http://geocities.com/revival_center/bar.gif"/></h3>
 
- <h3 align="center"><img src="https://web.archive.org/web/20090803144221/http://hk.geocities.com/riancylui/images/3d_melody.gif"/></h3>
+ <h3 align="center"><img src="https://64.media.tumblr.com/bfdc4e2311c4384ce7bcce84566431d6/5731f5271018f856-d5/s1280x1920/6ccbbc865e0da8b250fedc1abb514b06c9ec9a5b.gifv"/></h3>
 
 
  <h3 align="center"> <img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/>  ﻿ｈｅｌｌｏ  ｗｏｒｌｄ！<img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/> </h3>
@@ -13,8 +13,8 @@
 <h3> 𝘼𝙨𝙞𝙜𝙣𝙖𝙩𝙪𝙧𝙖𝙨: </h3>
 <h3>
  <ul>
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO"> 𝙿𝚛𝚘𝚐𝚛𝚊𝚖𝚊𝚌𝚒𝚘́𝚗.</a></li>
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/BAE"> 𝔅𝔞𝔰𝔢 𝔇𝔢 𝔇𝔞𝔱𝔬𝔰</a></li> 
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO"> PRO </a></li>
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/BAE"> BAE </a></li> 
  </ul>
 </h3>
 
