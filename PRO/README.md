@@ -1,6 +1,6 @@
 <h3 align="center">PROGRAMACIÓN</h3>
 
-<p>Aqui estaré subiendo mis ejercicios tanto de clase como lo que haga durante el curso en casa. Intentaré dividirlo por temas y usar esto de índice para que me sea mas cómodo :D.</p>
+<p>Aqui estaré subiendo ejercicios tanto de clase como lo que haga durante el curso. Intentaré dividirlo por temas y usar esto de índice para que sea mas cómodo :D.</p>
 
 <h3 align="center"><img src="https://web.archive.org/web/20090902072522/http://geocities.com/revival_center/bar.gif"/></h3>
 
