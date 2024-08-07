@@ -5,6 +5,10 @@
 
 
  <h3 align="center"> <img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/>  ﻿ｈｅｌｌｏ  ｗｏｒｌｄ！<img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/> </h3>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 72f556a28b00cc1f68482e1fa17826290602700f
 
 
  <p> Este repositorio esta dedicado para guardar mis apuntes y ejercicios realizados en el curso 2024/2025 de DAW.</p>
