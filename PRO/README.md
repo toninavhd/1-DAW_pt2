@@ -1,8 +1,6 @@
 <h3 align="center"><img src="https://64.media.tumblr.com/24b2e4b48ad372da662506bfdf60c07a/8f243cc7de64679e-28/s400x600/6b90b64185c1065e4139f8a8fa93f1b742aae76c.gifv"> Ｐｒｏｇｒａｍａｃｉóｎ <img src="https://64.media.tumblr.com/24b2e4b48ad372da662506bfdf60c07a/8f243cc7de64679e-28/s400x600/6b90b64185c1065e4139f8a8fa93f1b742aae76c.gifv"></h3>
 
-<p>Aqui estaré subiendo ejercicios tanto de clase como lo que haga durante el curso. Intentaré dividirlo por temas y usar esto de índice para que sea mas cómodo.</p>
-
-<h4 align="right">ᴾʸᵗʰᵒⁿ ᶜʰᵃⁿ <img height="100" width="100"src="https://i.redd.it/k126wnojy9801.gif"></h4>
+<h4 align="center"><img height="150" width="150"src="https://i.redd.it/k126wnojy9801.gif"></h4>
 
 <h3 align="center"><img src="https://64.media.tumblr.com/10332b83ea5c4c2bfef5412b9ae46e19/78d3fa84e9189cc4-55/s400x600/45c56e3b758f4cb5a3a00faa85c57dea271bab24.gifv"/><img src="https://64.media.tumblr.com/10332b83ea5c4c2bfef5412b9ae46e19/78d3fa84e9189cc4-55/s400x600/45c56e3b758f4cb5a3a00faa85c57dea271bab24.gifv"/></h3>
 
