@@ -1,4 +1,4 @@
-<h3 align="center">Ｐｒｏｇｒａｍａｃｉóｎ．</h3>
+<h3 align="center"><img src="https://64.media.tumblr.com/24b2e4b48ad372da662506bfdf60c07a/8f243cc7de64679e-28/s400x600/6b90b64185c1065e4139f8a8fa93f1b742aae76c.gifv"> Ｐｒｏｇｒａｍａｃｉóｎ <img src="https://64.media.tumblr.com/24b2e4b48ad372da662506bfdf60c07a/8f243cc7de64679e-28/s400x600/6b90b64185c1065e4139f8a8fa93f1b742aae76c.gifv"></h3>
 
 <p>Aqui estaré subiendo ejercicios tanto de clase como lo que haga durante el curso. Intentaré dividirlo por temas y usar esto de índice para que sea mas cómodo.</p>
 
