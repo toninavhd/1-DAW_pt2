@@ -2,7 +2,7 @@
 
 <p>Aqui estaré subiendo ejercicios tanto de clase como lo que haga durante el curso. Intentaré dividirlo por temas y usar esto de índice para que sea mas cómodo.</p>
 
-<h4 align="right"><img height="100" width="100"src="https://i.redd.it/k126wnojy9801.gif"></h4>
+<h4 align="right">ᴾʸᵗʰᵒⁿ ᶜʰᵃⁿ <img height="100" width="100"src="https://i.redd.it/k126wnojy9801.gif"></h4>
 
 <h3 align="center"><img src="https://64.media.tumblr.com/10332b83ea5c4c2bfef5412b9ae46e19/78d3fa84e9189cc4-55/s400x600/45c56e3b758f4cb5a3a00faa85c57dea271bab24.gifv"/><img src="https://64.media.tumblr.com/10332b83ea5c4c2bfef5412b9ae46e19/78d3fa84e9189cc4-55/s400x600/45c56e3b758f4cb5a3a00faa85c57dea271bab24.gifv"/></h3>
 
