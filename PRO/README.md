@@ -1,8 +1,7 @@
-<h3 align="center"><img src="https://64.media.tumblr.com/24b2e4b48ad372da662506bfdf60c07a/8f243cc7de64679e-28/s400x600/6b90b64185c1065e4139f8a8fa93f1b742aae76c.gifv"> Ｐｒｏｇｒａｍａｃｉóｎ <img src="https://64.media.tumblr.com/24b2e4b48ad372da662506bfdf60c07a/8f243cc7de64679e-28/s400x600/6b90b64185c1065e4139f8a8fa93f1b742aae76c.gifv"></h3>
+<h3 align="center"><img src="https://64.media.tumblr.com/e7cc10b00c066f1454593fc260fa2dce/c4ace858d3001b2c-5d/s400x600/a368657e9217eaa54d68f2598fe5b4fa6b3ff908.gifv"> Ｐｒｏｇｒａｍａｃｉóｎ <img src="https://64.media.tumblr.com/e7cc10b00c066f1454593fc260fa2dce/c4ace858d3001b2c-5d/s400x600/a368657e9217eaa54d68f2598fe5b4fa6b3ff908.gifv"></h3>
 
-<h4 align="center"><img height="150" width="150"src="https://i.redd.it/k126wnojy9801.gif"></h4>
+<h4 align="center"><img width="200"src="https://64.media.tumblr.com/7bd3a7fb2efc8b21b439050b2acad3d5/c3ed94bdce30e401-18/s250x400/096de77f4976b65a12fd745243cd1b1e68cc046e.gifv"></h4>
 
-<h3 align="center"><img src="https://64.media.tumblr.com/10332b83ea5c4c2bfef5412b9ae46e19/78d3fa84e9189cc4-55/s400x600/45c56e3b758f4cb5a3a00faa85c57dea271bab24.gifv"/><img src="https://64.media.tumblr.com/10332b83ea5c4c2bfef5412b9ae46e19/78d3fa84e9189cc4-55/s400x600/45c56e3b758f4cb5a3a00faa85c57dea271bab24.gifv"/></h3>
 
 <h3 align="center">▓▓▒▒░░ Unidades de trabajo ░░▒▒▓▓</h3>
 <h3>
@@ -18,4 +17,6 @@
 
 
 
-<h3 aling="left"><img src="https://64.media.tumblr.com/c4054840e87489a1181b9eca82dce5f2/478a5d9fed8bc5bc-07/s100x200/baea399325d6f90024d78d4381bd000d4f1b47e4.gifv"> <img src="https://64.media.tumblr.com/e7cc10b00c066f1454593fc260fa2dce/c4ace858d3001b2c-5d/s400x600/a368657e9217eaa54d68f2598fe5b4fa6b3ff908.gifv"></h3>
+<h3 aling="left">
+<img height="35" width="90" src="https://64.media.tumblr.com/549e524f52086c3eb3723372cd2e06f0/e4a0bbfbab0a44fe-89/s100x200/3c57170c893430340d1de594eb29a32e1ac6bc02.pnj">
+<img src="https://64.media.tumblr.com/c4054840e87489a1181b9eca82dce5f2/478a5d9fed8bc5bc-07/s100x200/baea399325d6f90024d78d4381bd000d4f1b47e4.gifv"></h3>
