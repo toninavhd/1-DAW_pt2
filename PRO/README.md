@@ -1,8 +1,8 @@
-<h3 align="center">PROGRAMACIÓN</h3>
+<h3 align="center">Ｐｒｏｇｒａｍａｃｉóｎ．</h3>
 
-<p>Aqui estaré subiendo ejercicios tanto de clase como lo que haga durante el curso. Intentaré dividirlo por temas y usar esto de índice para que sea mas cómodo :D.</p>
+<p>Aqui estaré subiendo ejercicios tanto de clase como lo que haga durante el curso. Intentaré dividirlo por temas y usar esto de índice para que sea mas cómodo.</p>
 
-<h3 align="center"><img src="https://web.archive.org/web/20090902072522/http://geocities.com/revival_center/bar.gif"/></h3>
+<h3 align="center"><img src="https://64.media.tumblr.com/10332b83ea5c4c2bfef5412b9ae46e19/78d3fa84e9189cc4-55/s400x600/45c56e3b758f4cb5a3a00faa85c57dea271bab24.gifv"/><img width="100"src="https://i.redd.it/k126wnojy9801.gif"><img src="https://64.media.tumblr.com/10332b83ea5c4c2bfef5412b9ae46e19/78d3fa84e9189cc4-55/s400x600/45c56e3b758f4cb5a3a00faa85c57dea271bab24.gifv"/></h3>
 
 <h3 align="center">▓▓▒▒░░ Unidades de trabajo ░░▒▒▓▓</h3>
 <h3>
@@ -14,7 +14,8 @@
     <li><a href=""> UT5 </a></li>  
  </ul>
 </h3>
+<h3 align="center"><img src="https://64.media.tumblr.com/2cc4bda506dc6912e2281e15ead9548c/d13c4997ba816f01-c8/s400x600/843b0babc5e2c25d6c9c8fb2da7b13b66438aba6.gifv"></h3>
 
-<h3 align="center"><img src="https://web.archive.org/web/20090902072522/http://geocities.com/revival_center/bar.gif"/></h3>
 
-<h3 aling="left"><img src="https://64.media.tumblr.com/c4054840e87489a1181b9eca82dce5f2/478a5d9fed8bc5bc-07/s100x200/baea399325d6f90024d78d4381bd000d4f1b47e4.gifv"></h3>
+
+<h3 aling="left"><img src="https://64.media.tumblr.com/c4054840e87489a1181b9eca82dce5f2/478a5d9fed8bc5bc-07/s100x200/baea399325d6f90024d78d4381bd000d4f1b47e4.gifv"> <img src="https://64.media.tumblr.com/e7cc10b00c066f1454593fc260fa2dce/c4ace858d3001b2c-5d/s400x600/a368657e9217eaa54d68f2598fe5b4fa6b3ff908.gifv"></h3>
