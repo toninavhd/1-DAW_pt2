@@ -6,7 +6,7 @@
 
  <h3 align="center"> <img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/>  ﻿ｈｅｌｌｏ  ｗｏｒｌｄ！<img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/> </h3>
 
- <p> Este repositorio esta dedicado para guardar mis apuntes y ejercicios realizados en el curso 2024/2025 de DAW.</p>
+ <p> Este repositorio esta dedicado a guardar mis apuntes y ejercicios realizados en el curso 2024/2025 de DAW.</p>
 <h3 align="left"><img src="https://64.media.tumblr.com/0b6f86f148e81c42a4649e2e290fb0fa/d0745e618a8e6ac7-3b/s250x400/aab06a4704af08a97f019af8133ca0e9788ff2ad.gifv"/></h3> 
 
 <h3 align="center">▓▓▓▓▒▒▒▒░░░░ 𝘼𝙨𝙞𝙜𝙣𝙖𝙩𝙪𝙧𝙖𝙨 ░░░░▒▒▒▒▓▓▓▓</h3>
