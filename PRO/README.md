@@ -12,6 +12,10 @@
     <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut3"> 𝑈𝑇. 𝐼𝐼𝐼 </a></li> 
     <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut4"> 𝑈𝑇. 𝐼𝑉 </a></li>
     <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut5"> 𝑈𝑇. 𝑉 </a></li>  
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut6"> 𝑈𝑇. 𝑉𝐼 </a></li> 
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut7"> 𝑈𝑇. 𝑉𝐼𝐼 </a></li> 
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut8"> 𝑈𝑇. 𝑉𝐼𝐼𝐼 </a></li> 
+
  </ul>
 </h3>
 
