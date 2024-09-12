@@ -1,8 +1,8 @@
 <h1 align='center' > 𝐔𝐓 𝐈𝐈</h1>
-<h1 align='center'> Tipos de datos</h1>
+
 <h3 align='center'><img src="https://64.media.tumblr.com/9e18b5b3fc323f9f9b79cfd950cdb246/ddd125b7d3b090e9-75/s400x600/b10388b1780146632827f5b2f95e0a17d1da8371.gifv"/> </h3>
 
-
+<h3>Tipos de datos.</h3>
 <p>Los programas estan formados por <b>código</b> y <b></b>datos que son una secuencia de bits. La interpretación de estos depende de cada lenguaje de programación que almacena no solo los datos si no también distintos metadatos</p>
 
 <p> En <b>python todo son objetos</b> y cada objeto <b>tiene</b> almenos los siguientes campos: </p>
