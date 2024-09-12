@@ -2,7 +2,7 @@
 
 <h3 align='center'><img src="https://64.media.tumblr.com/9e18b5b3fc323f9f9b79cfd950cdb246/ddd125b7d3b090e9-75/s400x600/b10388b1780146632827f5b2f95e0a17d1da8371.gifv"/> </h3>
 
-<h3>Tipos de datos.</h3>
+<h2>Tipos de datos.</h2>
 <p>Los programas estan formados por <b>código</b> y <b></b>datos que son una secuencia de bits. La interpretación de estos depende de cada lenguaje de programación que almacena no solo los datos si no también distintos metadatos</p>
 
 <p> En <b>python todo son objetos</b> y cada objeto <b>tiene</b> almenos los siguientes campos: </p>
@@ -36,7 +36,7 @@ name = 'value'
 
 <h3><img width="40" src="https://64.media.tumblr.com/047cbcfd75fa8436a05117709730a7fd/56a8b33a30a474ba-7e/s100x200/e8150b8d88954e38aa097c2b072f4aa37de51ca3.gifv"/> Notas:</h3>
 
-<ul style=' list-style-image: url(https://64.media.tumblr.com/8cbca649becf7e0ade94ef2333e53f89/5326f244a7739283-7b/s75x75_c1/93da5540c8e6c7de15f6fc031776aa480c634fcd.gifv); '>
+<ul style=' list-style-image: url(https://64.media.tumblr.com/8cbca649becf7e0ade94ef2333e53f89/5326f244a7739283-7b/s75x75_c1/93da5540c8e6c7de15f6fc031776aa480c634fcd.gifv);'>
 <li>
 Las <b>constantes en MAYÚSCULA</b> como por ejemplo:
 
