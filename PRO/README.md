@@ -7,14 +7,14 @@
 
 <h3>
  <ul>
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut1"> 𝑈𝑇. 𝐼</a></li>
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut2"> 𝑈𝑇. 𝐼𝐼 </a></li>
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut3"> 𝑈𝑇. 𝐼𝐼𝐼 </a></li> 
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut4"> 𝑈𝑇. 𝐼𝑉 </a></li>
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut5"> 𝑈𝑇. 𝑉 </a></li>  
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut6"> 𝑈𝑇. 𝑉𝐼 </a></li> 
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut7"> 𝑈𝑇. 𝑉𝐼𝐼 </a></li> 
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut8"> 𝑈𝑇. 𝑉𝐼𝐼𝐼 </a></li> 
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut1"> 𝑈𝑇 𝐼 - Iɴᴛʀᴏᴅᴜᴄᴄɪᴏ́ɴ ᴀ ʟᴀ ᴘʀᴏɢʀᴀᴍᴀᴄɪᴏ́ɴ.</a></li>
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut2"> 𝑈𝑇 𝐼𝐼 - Tɪᴘᴏs ᴅᴇ ᴅᴀᴛᴏs. </a></li>
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut3"> 𝑈𝑇 𝐼𝐼𝐼 - Cᴏɴᴛʀᴏʟ ᴅᴇ ꜰʟᴜᴊᴏ. </a></li> 
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut4"> 𝑈𝑇 𝐼𝑉 - Esᴛʀᴜᴄᴛᴜʀᴀ ᴅᴇ ᴅᴀᴛᴏs. (I) </a></li>
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut5"> 𝑈𝑇 𝑉 - Esᴛʀᴜᴄᴛᴜʀᴀ ᴅᴇ ᴅᴀᴛᴏs. (II) </a></li>  
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut6"> 𝑈𝑇 𝑉𝐼 - Fᴜɴᴄɪᴏɴᴇs. </a></li> 
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut7"> 𝑈𝑇 𝑉𝐼𝐼 - POO.</a></li> 
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO/ut8"> 𝑈𝑇. 𝑉𝐼𝐼𝐼 - Lɪʙʀᴇʀɪ́ᴀs </a></li> 
 
  </ul>
 </h3>
