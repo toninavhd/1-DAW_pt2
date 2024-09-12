@@ -15,7 +15,7 @@
 
 <h3 align='center'><img src="https://64.media.tumblr.com/0ba6837d1f18265d1cb622617e5c7b5b/6498f69b85fa996f-b8/s400x600/72f1ee1d3ae9da1350e9d7fc10498521f416a1ef.gifv"/> </h3>
 
-<h3>Variables</h3>
+<h2><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/>Variables</h2>
 <p>Las variables son importantes ya que le asignan <b>nombres</b> a los valores</p>
 
 ```python
