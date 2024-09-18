@@ -26,7 +26,7 @@
 <ul>
     <li>Es <b>interpretado y multiplataforma</b>.</li>
     <li>Es <b>multiparadigma</b>(soporta POO, programación imperativa y programación funcional).</li>
-    <li>Es de propósito general.</li>
+    <li>Es de <b>propósito general</b>.</li>
 </ul>
 
 <br>
