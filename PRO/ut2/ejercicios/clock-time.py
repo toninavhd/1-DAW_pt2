@@ -1,8 +1,3 @@
-# *********************
-# CONTANDO MILISEGUNDOS
-# *********************
-
-
 def run(hours: int, minutes: int, seconds: int) -> float:
     hours_to_milliseconds = hours * 3600000 
     minutes_to_milliseconds = minutes * 60000

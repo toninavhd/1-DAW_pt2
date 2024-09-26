@@ -1,8 +1,3 @@
-# ***************
-# PRECIO SIN IGIC
-# ***************
-
-
 def run(price_with_igic: float, igic: float) -> float:
     
     clean_price = price_with_igic /  ((igic / 100) + 1)
