@@ -1,5 +1,5 @@
 def run(year: int) -> int:
-    century = (year - 1) // 100 + 1
+    century = ( year + 99 ) // 100
     return century
 
 
