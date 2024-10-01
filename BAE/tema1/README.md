@@ -4,11 +4,18 @@
 
 <h3>Almacenamiento de la información.</h3>
 <p>
-
-
+La definición de <b>datos</b> es la <b> información concreta </b> sobre hechos elementos,etc., que permite estudiarlos, analizarlos o conocerlos. En el campo de la informatica los datos sería una cifra, letra o palabra que escribes en la memoria de la máquina, dicha información se almacena en un formato deteminado. Pueden ser de los siguientes tipos.
+<br>
+<ul>
+<li>Un número</li>
+<li>Una letra</li>
+<li>Un signo ortográfico</li>
+<li>etc.</li>
+</ul>
+En resumen sería <b>cualquier entrada</b> que le mandemos al ordenador.
 </p>
 
-<h3>Datos.</h3>
+<h3>Tipos de datos.</h3>
 <p>
 
 
