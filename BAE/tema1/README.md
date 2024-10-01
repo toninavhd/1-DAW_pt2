@@ -20,24 +20,24 @@ La información podria definirse como un <b>conjunto de datos</b> que describen 
 </p>
 
 
-<h3><img width='50' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-hMV5iKw34u_Jm2s1i-MJHcyI2Q4-Y7Xa2cFpsTUkmPjzU7D01v5bdhp-dQX7LI5GaAFayTt8VwQToD79Mn7SRg9xb4nLz8i1Q-ZGohn58tQBzv2G2CRy300r99jrGRehBOG9GTaISJk/s1600/tumblr_lmseleR7RG1qcfn0j.gif'>Tipos de datos.</h3>
+<h3><img width='50' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-hMV5iKw34u_Jm2s1i-MJHcyI2Q4-Y7Xa2cFpsTUkmPjzU7D01v5bdhp-dQX7LI5GaAFayTt8VwQToD79Mn7SRg9xb4nLz8i1Q-ZGohn58tQBzv2G2CRy300r99jrGRehBOG9GTaISJk/s1600/tumblr_lmseleR7RG1qcfn0j.gif'> Tipos de datos.</h3>
 <p>
 
 
 </p>
 
-<h3><img width='50' src='https://media.tenor.com/FIOSFwDbg2MAAAAi/sanrio-cinnamoroll.gif'>Ficheros.</h3>
+<h3><img width='50' src='https://media.tenor.com/FIOSFwDbg2MAAAAi/sanrio-cinnamoroll.gif'> Ficheros.</h3>
 <p>
 
 
 </p>
 
-<h3><img width='50' src='https://i.pinimg.com/originals/29/53/f0/2953f0be5b2be7f8b8fa7f51ce7d114f.gif'>Diagramas entidad relación (ER).</h3>
+<h3><img width='50' src='https://i.pinimg.com/originals/29/53/f0/2953f0be5b2be7f8b8fa7f51ce7d114f.gif'> Diagramas entidad relación (ER).</h3>
 <p>
 
 
 </p>
-<h3><img width='50' src='https://64.media.tumblr.com/9472988694f8e599c436740a312469ae/b7bf0eba098c41c0-40/s500x750/6f66cefec9847f66881db0b80c99689badb90c35.gifv'>Normalización.</h3>
+<h3><img width='50' src='https://64.media.tumblr.com/9472988694f8e599c436740a312469ae/b7bf0eba098c41c0-40/s500x750/6f66cefec9847f66881db0b80c99689badb90c35.gifv'> Normalización.</h3>
 <p>
 
 
