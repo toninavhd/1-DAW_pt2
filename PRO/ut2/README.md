@@ -78,3 +78,4 @@ Usar 𝚜𝚗𝚊𝚔𝚎_𝚌𝚊𝚜𝚎
 <li>Python nos permite usar guiones <code>_</code> bajos para separar los números para una mejor lectura.</li>
 </ul>
 </p>
+<h2 align='center'>Cadenas de texto.</h2>
