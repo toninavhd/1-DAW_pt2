@@ -73,7 +73,7 @@ Usar 𝚜𝚗𝚊𝚔𝚎_𝚌𝚊𝚜𝚎
 
 <h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/> Enteros</h3>
 <p>Los <b>números enteros</b> no pueden tener decimales pero pueden tener signo y expresarse en distinta base a la decimal.
-<ul><b>Importante</b>
+<ul><b><img width="50" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/643ef1d4-6639-475b-ae06-a3bafad57cba/ddkggh6-9e40bba2-38f0-4ed5-b001-94978d32dc54.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY0M2VmMWQ0LTY2MzktNDc1Yi1hZTA2LWEzYmFmYWQ1N2NiYVwvZGRrZ2doNi05ZTQwYmJhMi0zOGYwLTRlZDUtYjAwMS05NDk3OGQzMmRjNTQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EeuTyFHTSzDgq60qzZTLcUv4Gs8sHXRbtgwnkU74DNc"/> ｉｍｐｏｒｔａｎｔｅ！！ </b><img width="50" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/643ef1d4-6639-475b-ae06-a3bafad57cba/ddkggh6-9e40bba2-38f0-4ed5-b001-94978d32dc54.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY0M2VmMWQ0LTY2MzktNDc1Yi1hZTA2LWEzYmFmYWQ1N2NiYVwvZGRrZ2doNi05ZTQwYmJhMi0zOGYwLTRlZDUtYjAwMS05NDk3OGQzMmRjNTQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EeuTyFHTSzDgq60qzZTLcUv4Gs8sHXRbtgwnkU74DNc"/>
 <li>No se puede empezar un entero por <code>0</code>.</li>
 <li>Python nos permite usar guiones <code>_</code> bajos para separar los números para una mejor lectura.</li>
 </ul>
