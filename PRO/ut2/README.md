@@ -77,6 +77,8 @@ Usar 𝚜𝚗𝚊𝚔𝚎_𝚌𝚊𝚜𝚎
 <li>No se puede empezar un entero por <code>0</code>.</li>
 <li>Python nos permite usar guiones <code>_</code> bajos para separar los números para una mejor lectura.</li>
 </ul>
+
+<h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/> Flotantes</h3>
 </p>
 <h2 align='center'><img src="https://64.media.tumblr.com/7616076010fff423ef662d3544e45471/dea8bb6ec17cca23-a4/s400x600/40f9f7d53766a6bbee1d90e9feb58cdf7a4a4d4c.gifv"/> </h2>
 
