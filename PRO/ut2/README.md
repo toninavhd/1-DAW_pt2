@@ -66,15 +66,15 @@ Usar 𝚜𝚗𝚊𝚔𝚎_𝚌𝚊𝚜𝚎
 <h3>Booleanos</h3>
 <p>Estos datos pertenecen al campo de la Lógica binaria (Álgebra de Boole). En esta lógica las variables solo pueden tomar <b>dos valores:</b>
 <ul>
-<li><b>True</b> cualquier valor distinto de 0</li>
-<li><b>False</b> es igual a 0</li> 
+<li><code>True</code> cualquier valor distinto de 0</li>
+<li><code>False</code> es igual a 0</li> 
 </ul>
 </p>
 
 <h3>Enteros</h3>
 <p>Los <b>números enteros</b> no pueden tener decimales pero pueden tener signo y expresarse en distinta base a la decimal.
 <ul><b>Importante</b>
-<li>No se puede empezar un entero por 0</li>
-<li>Python nos permite usar guiones bajos para separar los números para una mejor lectura.</li>
+<li>No se puede empezar un entero por <code>0</code>.</li>
+<li>Python nos permite usar guiones <code>_</code> bajos para separar los números para una mejor lectura.</li>
 </ul>
 </p>
