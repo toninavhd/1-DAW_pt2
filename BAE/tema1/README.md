@@ -14,6 +14,11 @@ La definición de <b>datos</b> es la <b> información concreta </b> sobre hechos
 </ul>
 En resumen sería <b>cualquier entrada</b> que le mandemos al ordenador.
 </p>
+<h4>Información.</h4>
+<p>
+La información podria definirse como un <b>conjunto de datos</b> que describen sucesos sobre entidades.
+</p>
+
 
 <h3>Tipos de datos.</h3>
 <p>
