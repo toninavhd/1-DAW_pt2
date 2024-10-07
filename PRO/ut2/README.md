@@ -54,7 +54,7 @@ Usar 𝚜𝚗𝚊𝚔𝚎_𝚌𝚊𝚜𝚎
 <ul>
     <li> <b>Sustantivos</b> para variables.</li>
     <li><b>Verbos</b> para funciones. </li>
-    <li><b>Adjetivos</b> para booleanos. </li>
+    <li><b>Adjetivos</b> para booleanos*. </li>
 </ul>
 </li>
 </ul>
@@ -63,18 +63,18 @@ Usar 𝚜𝚗𝚊𝚔𝚎_𝚌𝚊𝚜𝚎
 <h2 align='center'>Números.</h2>
 <p>Existen distintos tipos de datos numéricos dentro de Python como <b>booleanos</b>,<b>enteros</b> y <b>flotantes</b>. A continuación los veremos en detalle.
 </p>
-<h3>Booleanos</h3>
+<h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/> Booleanos</h3>
 <p>Estos datos pertenecen al campo de la Lógica binaria (Álgebra de Boole). En esta lógica las variables solo pueden tomar <b>dos valores:</b>
 <ul>
-<li><b>True</b> cualquier valor distinto de 0</li>
-<li><b>False</b> es igual a 0</li> 
+<li><code>True</code> cualquier valor distinto de 0</li>
+<li><code>False</code> es igual a 0</li> 
 </ul>
 </p>
 
-<h3>Enteros</h3>
+<h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/> Enteros</h3>
 <p>Los <b>números enteros</b> no pueden tener decimales pero pueden tener signo y expresarse en distinta base a la decimal.
-<ul><b>Importante</b>
-<li>No se puede empezar un entero por 0</li>
-<li>Python nos permite usar guiones bajos para separar los números para una mejor lectura.</li>
+<ul><img width="30" src="https://64.media.tumblr.com/8cbca649becf7e0ade94ef2333e53f89/5326f244a7739283-7b/s75x75_c1/93da5540c8e6c7de15f6fc031776aa480c634fcd.gifv"/><b>Importante</b><img width="30" src="https://64.media.tumblr.com/8cbca649becf7e0ade94ef2333e53f89/5326f244a7739283-7b/s75x75_c1/93da5540c8e6c7de15f6fc031776aa480c634fcd.gifv"/>
+<li><b>No</b> se puede empezar un entero por <code>0</code></li>
+<li>Python nos permite usar guiones bajos  <code>_</code> para separar los números para una mejor lectura.</li>
 </ul>
 </p>
