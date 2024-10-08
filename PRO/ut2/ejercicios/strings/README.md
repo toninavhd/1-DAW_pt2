@@ -1,5 +1,7 @@
-# Ejercicios de cadenas
-Listado de ejercicios de cadenas de str
+# Cadenas de texto en python
+Listado de ejercicios relacionados con strings. 
+
+<img src='https://web.archive.org/web/20090902092639/http://geocities.com/TheTropics/Coast/1332/chains.gif'/>
 
 ### <img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/> Ejercicios <img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/>
 - [x] [calc-basic](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/calc-basic.py) 
@@ -17,5 +19,5 @@ Listado de ejercicios de cadenas de str
 - [x] [strip1](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/strip1.py)
 - [x] [find-integral](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/find-integral.py)
 - [x] [multiply-jack](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/multiply-jack.py)
-- [ ] first-last-digit 
+- [x] [first-last-digit](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/first-last-digit.py)
 
