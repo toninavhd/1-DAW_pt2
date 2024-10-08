@@ -17,5 +17,5 @@ Listado de ejercicios de cadenas de str
 - [x] [strip1](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/strip1.py)
 - [x] [find-integral](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/find-integral.py)
 - [x] [multiply-jack](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/multiply-jack.py)
-- [ ] first-last-digit 
+- [x] [first-last-digit](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/first-last-digit.py)
 
