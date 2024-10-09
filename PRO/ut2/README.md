@@ -156,4 +156,4 @@ Python3 almacena los caracteres codificados en el standard Unicode, lo que le pe
 <p><code>''</code></p>
 
 <h3>Conversión</h3>
-<p>Podemos crear 'strings' a partir de otros tipos de datos usando la función <code>str()</code>. Para el caso contrario de convertir un string en valor numerico usamos las funciones <code>int()</code> y  <code>float()</code></p>
+<p>Podemos crear 'strings' a partir de otros tipos de datos usando la función <code>str()</code>. Para el caso contrario de convertir un string en valor numérico usamos las funciones <code>int()</code> y  <code>float()</code></p>
