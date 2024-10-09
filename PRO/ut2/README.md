@@ -60,7 +60,7 @@ Usar 𝚜𝚗𝚊𝚔𝚎_𝚌𝚊𝚜𝚎
 </ul>
 <br>
 
-<h2 align='center'>Números.</h2>
+<h2>Números.</h2>
 <p>Existen distintos tipos de datos numéricos dentro de Python como <b>booleanos</b>,<b>enteros</b> y <b>flotantes</b>. A continuación los veremos en detalle.
 </p>
 <h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/> Booleanos</h3>
@@ -142,4 +142,18 @@ Base hexadecimal</h4>
 
 <h2 align='center'><img src="https://64.media.tumblr.com/7616076010fff423ef662d3544e45471/dea8bb6ec17cca23-a4/s400x600/40f9f7d53766a6bbee1d90e9feb58cdf7a4a4d4c.gifv"/> </h2>
 <br>
-<h2 align='center'>Cadenas de texto.</h2>
+<h2>Cadenas de texto.</h2>
+<p>Las cadenas de texto son tipos de datos inmutables que permiten almacenar información textual de forma cómoda.
+Python3 almacena los caracteres codificados en el standard Unicode, lo que le permite representar una buena cantidad de símbolos.</p>
+<h4>Como crear 'Strings'</h4>
+<p>Para crear una cadena de texto solo hay que poner comillas rodeando el texto que escribamos.</p>
+<p><code>'holiwis'</code></p>
+<h4>Comillas triples.</h4>
+<p>Hay una forma de crear cadenas multilínea usando comillas triples.
+</p>
+<h4>Cadena vacía.</h4>
+<p>La cadena vacia no lleva ningun carácter, parece que no pero es importante, se representaria de esta forma.</p>
+<p><code>''</code></p>
+
+<h3>Conversión</h3>
+<p>Podemos crear 'strings' a partir de otros tipos de datos usando la función <code>str()</code>. Para el caso contrario de convertir un string en valor numerico usamos las funciones <code>int()</code> y  <code>float()</code></p>
