@@ -140,18 +140,18 @@ Base hexadecimal</h4>
 <p><b>Función:</b><code>hex()</code>
 </p>
 
-<h2 align='center'><img src="https://64.media.tumblr.com/7616076010fff423ef662d3544e45471/dea8bb6ec17cca23-a4/s400x600/40f9f7d53766a6bbee1d90e9feb58cdf7a4a4d4c.gifv"/> </h2>
-<br>
+<h3 align='center'><img src="https://64.media.tumblr.com/7616076010fff423ef662d3544e45471/dea8bb6ec17cca23-a4/s400x600/40f9f7d53766a6bbee1d90e9feb58cdf7a4a4d4c.gifv"/> </h3>
+
 <h2>Cadenas de texto.</h2>
 <p>Las cadenas de texto son tipos de datos inmutables que permiten almacenar información textual de forma cómoda.
 Python3 almacena los caracteres codificados en el standard Unicode, lo que le permite representar una buena cantidad de símbolos.</p>
-<h4>Como crear 'Strings'</h4>
+<h3>Como crear 'Strings'</h3>
 <p>Para crear una cadena de texto solo hay que poner comillas rodeando el texto que escribamos.</p>
 <p><code>'holiwis'</code></p>
-<h4>Comillas triples.</h4>
+<h3>Comillas triples.</h3>
 <p>Hay una forma de crear cadenas multilínea usando comillas triples.
 </p>
-<h4>Cadena vacía.</h4>
+<h3>Cadena vacía.</h3>
 <p>La cadena vacia no lleva ningun carácter, parece que no pero es importante, se representaria de esta forma.</p>
 <p><code>''</code></p>
 
