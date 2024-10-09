@@ -145,15 +145,17 @@ Base hexadecimal</h4>
 <h2>Cadenas de texto.</h2>
 <p>Las cadenas de texto son tipos de datos inmutables que permiten almacenar información textual de forma cómoda.
 Python3 almacena los caracteres codificados en el standard Unicode, lo que le permite representar una buena cantidad de símbolos.</p>
-<h3>Como crear 'Strings'</h3>
+<h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/>Como crear 'Strings'</h3>
 <p>Para crear una cadena de texto solo hay que poner comillas rodeando el texto que escribamos.</p>
 <p><code>'holiwis'</code></p>
-<h3>Comillas triples.</h3>
+
+<h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/>Comillas triples.</h3>
 <p>Hay una forma de crear cadenas multilínea usando comillas triples.
 </p>
-<h3>Cadena vacía.</h3>
+
+<h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/>Cadena vacía.</h3>
 <p>La cadena vacia no lleva ningun carácter, parece que no pero es importante, se representaria de esta forma.</p>
 <p><code>''</code></p>
 
-<h3>Conversión</h3>
+<h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/>Conversión</h3>
 <p>Podemos crear 'strings' a partir de otros tipos de datos usando la función <code>str()</code>. Para el caso contrario de convertir un string en valor numérico usamos las funciones <code>int()</code> y  <code>float()</code></p>
