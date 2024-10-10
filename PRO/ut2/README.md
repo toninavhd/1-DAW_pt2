@@ -164,4 +164,6 @@ Python3 almacena los caracteres codificados en el standard Unicode, lo que le pe
 <p>Python permite <b>escapar</b> caracteres usando una barra invertida <code>\</code> antes del carácter en cuestion, le damos un significado especial.</p>
 <p>Un ejemplo sería el salto de línea que se representa como <code>/n</code>.</p>
 
-<h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/>Expresiones literales.</h3>
+<h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/> Expresiones literales.</h3>
+<p>Hay situaciones que nos interesa q los caracteres pierdan su significado especial, para eso usamos un formato llamado 'raw data' y se aplica poniendo una r antes de las comillas de la cadena de texto.</p>
+<p>Así sería un ejemplo de uso :D -> <code>text = r'abc\ndef</code></p>
