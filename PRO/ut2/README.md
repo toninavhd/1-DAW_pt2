@@ -166,4 +166,6 @@ Python3 almacena los caracteres codificados en el standard Unicode, lo que le pe
 
 <h3><img width="40" src="https://64.media.tumblr.com/e989512c04f78d9044b8521eac54bcaf/5326f244a7739283-e4/s75x75_c1/918d5791fd64f22dad1dec13fc43489aa3ba1f1d.gifv"/> Expresiones literales.</h3>
 <p>Hay situaciones que nos interesa q los caracteres pierdan su significado especial, para eso usamos un formato llamado 'raw data' y se aplica poniendo una r antes de las comillas de la cadena de texto.</p>
-<p>Así sería un ejemplo de uso :D -> <code>text = r'abc\ndef</code></p>
+<p>Así sería un ejemplo de uso :D -> <code>text = r'abc\ndef</code>.</p>
+
+
