@@ -1,7 +1,7 @@
 def run(symbol: str) -> str:
     coma_pos = symbol.index(',')
     coeficent = int(symbol[:coma_pos])
-    exponent = int(symbol[coma_pos + 1:])
+    exponent = int(symbol[coma_pos:])
     new_expo = exponent + 1
     new_coef = coeficent // new_expo
 
