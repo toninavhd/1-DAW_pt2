@@ -4,6 +4,7 @@ Listado de ejercicios relacionados con strings.
 <img src='https://web.archive.org/web/20090902092639/http://geocities.com/TheTropics/Coast/1332/chains.gif'/>
 
 ### <img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/> Ejercicios <img width="30" src="https://web.archive.org/web/20091026100043im_/http://geocities.com/hellokitty_can/smile.gif"/>
+
 - [x] [calc-basic](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/calc-basic.py) 
 - [x] [fstring-format](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/fstring-format.py) 
 - [x] [lost-word](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut2/ejercicios/strings/lost-word.py)
