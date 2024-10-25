@@ -1,6 +1,6 @@
 def run(feeling: str) -> str:
 
-    match feeling:
+    match feeling.lower():
         case 'happy':
             emoji = '😀'
         case 'sad':
