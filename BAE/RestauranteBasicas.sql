@@ -477,13 +477,7 @@ GO
 
 -- Muestra la fecha actual:
 SELECT datepart(month,getdate());
-go
-
--- Insertar registros (ejemplo)
-INSERT INTO Comida (nombre, fecha) VALUES
-('Desayuno', '2024-11-01'),
-('Almuerzo', '2024-11-02'),
-('Cena', '2024-11-03');
+GO
 
 -- Calcular días transcurridos
 SELECT nombre, fecha, DATEDIFF(CURDATE(), fecha) AS dias_transcurridos
