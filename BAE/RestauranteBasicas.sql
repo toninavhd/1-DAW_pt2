@@ -474,3 +474,29 @@ GO
 SELECT TipoPlato + ': ' + TipoPlato AS 'Su plato'
 FROM TipoPlato;
 GO
+
+-- Muestra la fecha actual:
+SELECT datepart(month,getdate());
+go
+
+-- Insertar registros (ejemplo)
+INSERT INTO Comida (nombre, fecha) VALUES
+('Desayuno', '2024-11-01'),
+('Almuerzo', '2024-11-02'),
+('Cena', '2024-11-03');
+
+-- Calcular días transcurridos
+SELECT nombre, fecha, DATEDIFF(CURDATE(), fecha) AS dias_transcurridos
+FROM Comida;
+GO
+
+-- Comidas efectuadas en domingo
+SELECT nombre, fecha
+FROM Comida
+WHERE DAYOFWEEK(fecha) = 1;
+GO
+
+-- Número del mes de cada comida
+SELECT nombre, fecha, MONTH(fecha) AS mes
+FROM Comida;
+GO
