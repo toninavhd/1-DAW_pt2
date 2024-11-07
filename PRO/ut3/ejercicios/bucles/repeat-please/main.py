@@ -2,7 +2,6 @@ def run():
     while True:
         name = input('¿Su nombre? ')
         if name == name.title():
-            print(name)
             break
         else:
             print('Error. Debe escribirlo correctamente')
