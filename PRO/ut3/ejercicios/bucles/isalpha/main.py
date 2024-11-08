@@ -5,6 +5,7 @@ def run(text: str) -> bool:
     for letter in text.lower():
         if letter not in ALPHABET:
             isalpha = False
+            break
 
     return isalpha
 
