@@ -7,6 +7,7 @@ def run(text: str) -> bool:
     for letter in text.lower():
         if letter in letter_repetitions:
             isogram = False
+            break
         letter_repetitions.append(letter)
     return isogram
 
