@@ -4,7 +4,7 @@ def run(text: str) -> bool:
     text = text.replace('-','')
     letter_repetitions = []
 
-    for letter in text.lower():
+    for letter in text:
         if letter in letter_repetitions:
             isogram = False
             break
