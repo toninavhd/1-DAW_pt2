@@ -1,8 +1,7 @@
 def run(text: str) -> bool:
-    isogram = True
-    
     text = text.replace('-','')
     letter_repetitions = []
+    isogram = True
 
     for letter in text:
         if letter in letter_repetitions:
