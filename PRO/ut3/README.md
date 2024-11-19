@@ -3,4 +3,6 @@
 
 <h2>Condicionales.</h2>
 <p>Aquí veremos las sentencias <code>if</code> y <code>match case</code> y sus distintas variantes.</p>
-<h3>La sentecia <code>if</code> </h3>
+
+<h2>Bucles.</h2>
+<p>Aquí veremos el uso de <code>while</code> y <code>for</code> para recorrer estructuras de datos. </p>
