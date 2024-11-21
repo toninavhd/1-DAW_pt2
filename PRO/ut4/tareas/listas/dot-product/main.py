@@ -1,14 +1,13 @@
 def run(u: list, v: list) -> float | None:
     u_length = len(u)
     v_length = len (v)
-    dprod = 0
-
+    dprod = None
+    
     if u_length == v_length:
+        dprod = 0
         for umul, vmul in zip(u,v):
             dprod += umul * vmul
-    else:
-        dprod = None
-
+            
     return dprod
 
 
