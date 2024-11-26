@@ -11,7 +11,7 @@ Para más detalles de la tarea consultar el siguiente enlace: [Tarea](https://ww
 |     0 | Antonio [@toninavhd](https://github.com/toninavhd)| Carlos [@SrCalero](https://github.com/SrCalero)| Leonardo [@Leopoldo777x](https://github.com/Leopoldo777x)|[Repositorio](https://github.com/toninavhd/1-DAW_pt2/tree/main/DJK/trabajo_grupo)|
 
 ### Supuesto para analizar.
-**Problema A**
+**Problema A:**
 
 Una startup tecnológica necesita alojar una **aplicación de alto rendimiento** que debe **escalar rápidamente durante eventos de tráfico elevado**. Además, requiere un **control total sobre la configuración de los servidores**, la red y el almacenamiento, con el objetivo de hilar fino en el hardware para **ahorrar costes**.
 
