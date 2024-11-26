@@ -25,6 +25,8 @@ En este caso recomendaria **IaaS (Infraestructura como Servicio)** ya que es un 
 - **Flexibilidad**: Las empresas pueden elegir y configurar los recursos según sus necesidades específicas, lo que facilita la personalización y la adaptación a cambios rápidos.
 - **Rapidez de Implementación**: Permite desplegar y gestionar aplicaciones rápidamente, acelerando el tiempo de llegada al mercado.
 
+## Ejemplos de servicios Iaas
+
 - **Amazon Web Services (AWS) EC2**: AWS ofrece una amplia gama de instancias EC2 que permiten un control total sobre la configuración de los servidores, la red y el almacenamiento. Además, AWS Auto Scaling puede ayudar a manejar picos de tráfico de manera eficiente.
 
 - **Google Cloud Platform (GCP) Compute Engine**: GCP proporciona máquinas virtuales altamente personalizables y escalables. Con herramientas como Google Kubernetes Engine (GKE), puedes gestionar contenedores de manera eficiente, lo que es ideal para aplicaciones que necesitan escalar rápidamente.

@@ -58,7 +58,7 @@ SELECT titulo, LEN(titulo) AS 'Número de letras del título', autor, LEN(autor)
 GO
 
 -- Mostrar los caracteres del 4 al 10 del autor
-SELECT SUBSTRING(autor, 4, 7) AS 'Caracteres del 4 al 10 del autor' FROM libros;
+SELECT SUBSTRING(autor, 4, 10) AS 'Caracteres del 4 al 10 del autor' FROM libros;
 GO
 
 -- Cambiar "arroba" por "@" y "punto" por "." en el texto "correoarrobahotmailpuntocom"
