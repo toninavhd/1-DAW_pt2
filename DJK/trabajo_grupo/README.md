@@ -19,7 +19,7 @@ En este caso recomendaria **IaaS (Infraestructura como Servicio)** ya que es un 
 
 ### Ventajas de IaaS para una startup tecnológica:
 
-- **Escalabilidad**: IaaS permite ajustar rápidamente los recursos según la demanda, lo cual es crucial para manejar picos de tráfico elevados sin problemas.
+- **Escalabilidad**: IaaS permite ajustar rápidamente los recursos según la demanda, lo cual es crucial para manejar picos de tráfico elevados sin problemas. Puede ser escalado verical(hardware) o escalado horizontal(distribucion de sistema).
 - **Costos Reducidos**: Al pagar solo por los recursos utilizados, las startups pueden evitar los altos costos iniciales de infraestructura y reducir gastos operativos.
 - **Control Total**: Ofrece un control completo sobre la configuración de los servidores, la red y el almacenamiento, permitiendo optimizar el rendimiento y los costos.
 - **Flexibilidad**: Las empresas pueden elegir y configurar los recursos según sus necesidades específicas, lo que facilita la personalización y la adaptación a cambios rápidos.
