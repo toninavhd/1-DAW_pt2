@@ -13,7 +13,8 @@
 <h3>
  <ul>
     <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/PRO"> PRO </a></li>
-    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/BAE"> BAE </a></li> 
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/BAE"> BAE </a></li>
+    <li><a href="https://github.com/toninavhd/1-DAW_pt2/tree/main/DJK"> DJK </a></li>
  </ul>
 </h3>
 
