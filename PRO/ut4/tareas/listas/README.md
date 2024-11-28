@@ -21,4 +21,4 @@
 - [x] [sum-diagonal](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/sum-diagonal/main.py)
 - [x] [powers2](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/powers2/main.py)
 - [x] [dec2bin](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/dec2bin/main.py)
-- [ ]  
+- [ ] [sum-mixed](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/sum-mixed/main.py)
