@@ -36,10 +36,10 @@
 - [ ] [merge-sorted]
 - [x] [trimmed-add](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
 - [ ] [wolves]
-- [ ] [minmax]
+- [x] [minmax](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
 - [ ] [cascading-subsets]
 - [ ] [diff-cuboid]
-- [ ] [fl-strip]
+- [x] [fl-strip](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/fl-strip/main.py)
 - [ ] [logical-chain]
 - [ ] [first-unused-id]
 - [ ] [find-odds]
