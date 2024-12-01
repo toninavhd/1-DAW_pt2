@@ -26,7 +26,7 @@
 - [x] [drop-even](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/drop-even/main.py)
 - [x] [nth-power](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/nth-power/main.py)
 - [ ] [name-initials]
-- [ ] [non-consecutive]
+- [x] [non-consecutive](SUBIR)
 - [x] [mul-reduce](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/mul-reduce/main.py)
 - [x] [digit-rev-list](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/digit-rev-list/main.py)
 - [x] [time-plus-minutes](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/time-plus-minutes/main.py)
@@ -37,16 +37,16 @@
 - [x] [trimmed-add](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
 - [ ] [wolves]
 - [x] [minmax](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
-- [ ] [cascading-subsets]
-- [ ] [diff-cuboid]
+- [x] [cascading-subsets](SUBIR)
+- [x] [diff-cuboid](SUBIR)
 - [x] [fl-strip](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/fl-strip/main.py)
-- [ ] [logical-chain]
+- [x] [logical-chain](SUBIR)
 - [ ] [first-unused-id]
 - [x] [find-odds](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/find-odds/main.py)
-- [ ] [chemistry]
-- [ ] [next-item]
-- [ ] [v-partition]
-- [ ] [attach-len]
+- [x] [chemistry](SUBIR)
+- [x] [next-item](SUBIR)
+- [x] [v-partition](SUBIR)
+- [x] [attach-len](SUBIR)
 - [ ] [reversing-words]
 - [ ] [barycenter]
 - [ ] [sort-custom]
