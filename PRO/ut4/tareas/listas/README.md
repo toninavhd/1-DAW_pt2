@@ -26,7 +26,7 @@
 - [x] [drop-even](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/drop-even/main.py)
 - [x] [nth-power](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/nth-power/main.py)
 - [ ] [name-initials]
-- [x] [non-consecutive](SUBIR)
+- [x] [non-consecutive](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/non-consecutive/main.py)
 - [x] [mul-reduce](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/mul-reduce/main.py)
 - [x] [digit-rev-list](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/digit-rev-list/main.py)
 - [x] [time-plus-minutes](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/time-plus-minutes/main.py)
@@ -37,17 +37,17 @@
 - [x] [trimmed-add](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
 - [ ] [wolves]
 - [x] [minmax](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
-- [x] [cascading-subsets](SUBIR)
-- [x] [diff-cuboid](SUBIR)
+- [x] [cascading-subsets]([SUBIR](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/cascading-subsets/main.py))
+- [x] [diff-cuboid](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/diff-cuboid/main.py)
 - [x] [fl-strip](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/fl-strip/main.py)
-- [x] [logical-chain](SUBIR)
+- [x] [logical-chain](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/logical-chain/main.py)
 - [ ] [first-unused-id]
 - [x] [find-odds](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/find-odds/main.py)
-- [x] [chemistry](SUBIR)
-- [x] [next-item](SUBIR)
-- [x] [v-partition](SUBIR)
-- [x] [attach-len](SUBIR)
-- [ ] [reversing-words]
+- [x] [chemistry](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/chemistry/main.py)
+- [x] [next-item](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/next-item/main.py)
+- [x] [v-partition](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/v-partition/main.py)
+- [x] [attach-len](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/attach-len/main.py)
+- [x] [reversing-words]
 - [ ] [barycenter]
 - [ ] [sort-custom]
 - [ ] [flatten-list-deep]
