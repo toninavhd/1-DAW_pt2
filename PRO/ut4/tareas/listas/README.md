@@ -37,7 +37,7 @@
 - [x] [trimmed-add](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
 - [x] [wolves](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
 - [x] [minmax](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
-- [x] [cascading-subsets]([SUBIR](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/cascading-subsets/main.py))
+- [x] [cascading-subsets](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/cascading-subsets/main.py)
 - [x] [diff-cuboid](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/diff-cuboid/main.py)
 - [x] [fl-strip](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/fl-strip/main.py)
 - [x] [logical-chain](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/logical-chain/main.py)
