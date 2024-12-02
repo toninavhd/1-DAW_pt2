@@ -9,7 +9,7 @@
 - [x] [fix-date](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/fix-date/main.py)
 - [x] [chars-list](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/chars-list/main.py)
 - [x] [dot-product](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/dot-product/main.py)
-- [x] [mul-matrix2](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/mul-matrix2/main.py)
+- [x] [mul-matrix2.x](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/mul-matrix2/main.py)
 - [x] [max-value](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/max-value/main.py)
 - [x] [max-value-with-min](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/max-value-with-min/main.py)
 - [x] [min-value](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/min-value/main.py)
@@ -25,7 +25,7 @@
 - [x] [n-multiples](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/n-multiples/main.py)
 - [x] [drop-even](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/drop-even/main.py)
 - [x] [nth-power](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/nth-power/main.py)
-- [ ] [name-initials]
+- [ ] [name-initials]()
 - [x] [non-consecutive](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/non-consecutive/main.py)
 - [x] [mul-reduce](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/mul-reduce/main.py)
 - [x] [digit-rev-list](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/digit-rev-list/main.py)
@@ -33,9 +33,9 @@
 - [x] [add-positives](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/add-positives/main.py)
 - [x] [add-opposites](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/add-opposites/main.py)
 - [x] [descending-numbers](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/descending-numbers/main.py)
-- [ ] [merge-sorted]
+- [ ] [merge-sorted]()
 - [x] [trimmed-add](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
-- [ ] [wolves]
+- [x] [wolves](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
 - [x] [minmax](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/trimmed-add/main.py)
 - [x] [cascading-subsets]([SUBIR](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/cascading-subsets/main.py))
 - [x] [diff-cuboid](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/diff-cuboid/main.py)
@@ -47,8 +47,8 @@
 - [x] [next-item](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/next-item/main.py)
 - [x] [v-partition](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/v-partition/main.py)
 - [x] [attach-len](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/attach-len/main.py)
-- [x] [reversing-words]
-- [ ] [barycenter]
+- [x] [reversing-words](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/reversing-words/main.py)
+- [x] [barycenter](https://github.com/toninavhd/1-DAW_pt2/blob/main/PRO/ut4/tareas/listas/barycenter/main.py)
 - [ ] [sort-custom]
 - [ ] [flatten-list-deep]
 - [ ] [first-duplicated]
