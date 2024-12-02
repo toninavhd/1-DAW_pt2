@@ -3,8 +3,8 @@ def run(items: list) -> bool:
 
     for item in items:
         if item != items[1]:
-            break
             all_same = False
+            break
             
     return all_same
 
