@@ -14,5 +14,3 @@ FROM DatosCompletosTabla
 WHERE fecha = ' 1/1/2013'
 GROUP BY provincia
 HAVING COUNT(isla) > 4
-
-----
