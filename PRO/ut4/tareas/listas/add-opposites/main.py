@@ -1,7 +1,7 @@
 def run(numbers: list) -> int:
     result = 0
     for number in numbers:
-       result +=  (- number)
+       result +=  -number
     return result
 
 
