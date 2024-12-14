@@ -4,26 +4,34 @@ Esta tarea corresponde con la actividad del bloque 3 de la asignatura ETS y DJK.
 
 Para más detalles de la tarea consultar el siguiente enlace: [Tarea](https://www3.gobiernodecanarias.org/medusa/eforma/campus/mod/assign/view.php?id=7823247)
 
-## Integrantes del grupo.
+## Integrantes del grupo
 
-| Grupo | Integrante 1 | Integrante 2 | Integrante 3 |url repositorio|
-| ----- | ------------ | ------------ | --------------- |--------|
-|     0 | Antonio [@toninavhd](https://github.com/toninavhd)| Carlos [@SrCalero](https://github.com/SrCalero)| Leonardo [@Leopoldo777x](https://github.com/Leopoldo777x)|[Repositorio](https://github.com/toninavhd/1-DAW_pt2/tree/main/DJK/trabajo_grupo)|
+| Grupo | Integrante 1 | Integrante 2 |url repositorio|
+| ----- | ------------ | --------------- |--------|
+|     0 | Antonio [@toninavhd](https://github.com/toninavhd)| Leonardo [@Leopoldo777x](https://github.com/Leopoldo777x)|[Repositorio](https://github.com/toninavhd/1-DAW_pt2/tree/main/DJK/trabajo_grupo)|
 
-### Supuesto para analizar.
+### Supuesto para analizar
 **Problema A:**
 
 Una startup tecnológica necesita alojar una **aplicación de alto rendimiento** que debe **escalar rápidamente durante eventos de tráfico elevado**. Además, requiere un **control total sobre la configuración de los servidores**, la red y el almacenamiento, con el objetivo de hilar fino en el hardware para **ahorrar costes**.
+ - **Recomendación aportada:**
+En este caso recomendariamos al cliente **IaaS (Infraestructura como Servicio)** ya que este modelo de computación en la nube que proporcionaría los recursos de TI ( *Tecnologías de la informacion*) virtualizados a través de Internet. En lugar de comprar y mantener servidores físicos, almacenamiento y redes por lo que esta opción **reduciría los costes iniciales** ofreciendo un servcio de calidad. 
 
-En este caso recomendaria **IaaS (Infraestructura como Servicio)** ya que es un modelo de computación en la nube que proporciona recursos de TI virtualizados a través de Internet. En lugar de comprar y mantener servidores físicos, almacenamiento y redes, las empresas pueden alquilar estos recursos según sea necesario.
+A continuación hablaremos en mas detalle de las ventajas de este modelo.
 
-### Ventajas de IaaS para una startup tecnológica:
+### Ventajas de IaaS para una startup tecnológica
 
-- **Escalabilidad**: IaaS permite ajustar rápidamente los recursos según la demanda, lo cual es crucial para manejar picos de tráfico elevados sin problemas. Puede ser escalado verical(hardware) o escalado horizontal(distribucion de sistema).
-- **Costos Reducidos**: Al pagar solo por los recursos utilizados, las startups pueden evitar los altos costos iniciales de infraestructura y reducir gastos operativos.
-- **Control Total**: Ofrece un control completo sobre la configuración de los servidores, la red y el almacenamiento, permitiendo optimizar el rendimiento y los costos.
-- **Flexibilidad**: Las empresas pueden elegir y configurar los recursos según sus necesidades específicas, lo que facilita la personalización y la adaptación a cambios rápidos.
-- **Rapidez de Implementación**: Permite desplegar y gestionar aplicaciones rápidamente, acelerando el tiempo de llegada al mercado.
+- **Escalabilidad:** Una de las principales ventajas del modelo ***IaaS*** es la *escalabilidad* esto significa que la empresa podrá ajustar los recursos y capacidad necesaria a demanda, esto supone una gran ventaja para empresas con un **trafico elevado**. El escalado puede ser de dos tipos:
+  - **Escalado verical**(hardware).
+  - **Escalado horizontal**(distribucion de sistema).
+<br>
+- **Costos Reducidos:** Como se comentaba a manera introductoria en el apartado anterior, al pagar solo por los recursos utilizados, las startups como la de este caso pueden evitar los altos costos iniciales de la infraestructura necesaria para las exigentes necesidades de la misma y reducir en gastos operativos.
+<br>
+- **Control Total:** Ofrece un control completo sobre la configuración de los servidores, la red y el almacenamiento, permitiendo optimizar el rendimiento y los costos.
+<br>
+- **Flexibilidad:** Las empresas pueden elegir y configurar los recursos según sus necesidades específicas, lo que facilita la personalización y la adaptación a cambios rápidos.
+<br>
+- **Rapidez de Implementación:** Permite desplegar y gestionar aplicaciones rápidamente, acelerando el tiempo de llegada al mercado.
 
 ## Ejemplos de servicios Iaas
 
