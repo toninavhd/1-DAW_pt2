@@ -45,27 +45,112 @@ A continuación hablaremos en mas detalle de las ventajas de este modelo.
 
 ## Ejemplos de servicios Iaas
 
-- **Amazon Web Services (AWS) EC2**: AWS ofrece una amplia gama de instancias EC2 que permiten un control total sobre la configuración de los servidores, la red y el almacenamiento. Además, AWS Auto Scaling puede ayudar a manejar picos de tráfico de manera eficiente.
+Hay varios servicios Iaas, a continuación, hablaremos en profundidad de tres de ellos y mencionaremos algunos mas mostrando sus características de forma mas resumida:
+
+#### Amazon Web Services (AWS) EC2
+
+- AWS ofrece una amplia gama de instancias EC2 que permiten un control total sobre la configuración de los servidores, la red y el almacenamiento. Además, AWS Auto Scaling puede ayudar a manejar picos de tráfico de manera eficiente. ***AWS*** fue lanzada oficalmente en 2006 por la compañía Amazon.
+ **AWS** ofrece más de 200 servicios que abarcan una amplia gama de tecnologías, incluyendo computación, almacenamiento, bases de datos, análisis, redes, aprendizaje automático, inteligencia artificial, Internet de las Cosas (IoT) y seguridad. Dentro de sus **principales servicios esta**:
+
+1. **Computación**:
+   - **Amazon EC2 (Elastic Compute Cloud):** Ofrece capacidad de computación escalable en la nube, permitiendo a los usuarios lanzar y gestionar instancias de servidores virtuales. **Recomendamos este servicio para nuestra empresa.**
+   - **AWS Lambda**: Ejecuta código sin necesidad de aprovisionar o gestionar servidores, ideal para aplicaciones sin servidor.
+
+2. **Almacenamiento**:
+   - **Amazon S3 (Simple Storage Service):** Proporciona almacenamiento de objetos escalable y duradero, utilizado para almacenar y recuperar cualquier cantidad de datos en cualquier momento.
+   - **Amazon EBS (Elastic Block Store):** Ofrece almacenamiento en bloque persistente para instancias EC2.
+
+3. **Bases de Datos**:
+   - **Amazon RDS (Relational Database Service):** Facilita la configuración, operación y escalado de bases de datos relacionales en la nube.
+   - **Amazon DynamoDB**: Una base de datos NoSQL completamente gestionada que proporciona rendimiento rápido y predecible con escalabilidad automática.
+
+4. **Redes y Entrega de Contenido:**
+   - **Amazon VPC (Virtual Private Cloud):** Permite aprovisionar una sección aislada de la nube de AWS para lanzar recursos en una red virtual definida.
+   - **Amazon CloudFront**: Un servicio de red de entrega de contenido (CDN) que distribuye datos, videos, aplicaciones y APIs a usuarios globalmente con baja latencia y altas velocidades de transferencia.
+
+5. **Seguridad, Identidad y Cumplimiento:**
+   - **AWS IAM (Identity and Access Management)**: Gestiona el acceso a los servicios y recursos de AWS de manera segura.
+   - **AWS Shield**: Proporciona protección contra ataques DDoS para las aplicaciones alojadas en AWS.
+<br>
+
+#### Microsoft Azure Virtual Machines:
+
+- Azure ofrece una infraestructura de alto rendimiento con opciones de escalabilidad automática. Además, Azure proporciona un control detallado sobre la configuración de los servidores y la red, lo que puede ayudar a optimizar costos.
+  Algunas de sus **principales características son:**
+
+1. **Compatibilidad con Múltiples Sistemas Operativos:**
+   - Azure Virtual Machines soporta una variedad de sistemas operativos, incluyendo Windows, Linux y otros sistemas operativos personalizados.
+
+2. **Escalabilidad y Flexibilidad:**
+   - Permite escalar automáticamente hasta miles de máquinas virtuales según la demanda o las programaciones definidas con Virtual Machine Scale Sets.
+   - Ofrece opciones de escalado horizontal y vertical para adaptarse a las necesidades cambiantes de las aplicaciones.
+
+3. **Rendimiento y Alta Disponibilidad:**
+   - Mejora el rendimiento de la red y el almacenamiento con el hardware personalizado de Azure Boost y el diseño optimizado del hipervisor.
+   - Garantiza una alta disponibilidad con un Acuerdo de Nivel de Servicio (SLA) del 99.99%.
+
+4. **Seguridad y Cumplimiento:**
+   - Proporciona seguridad integrada con Azure Security Center y Azure Defender.
+   - Cumple con una amplia gama de certificaciones de cumplimiento y normativas de seguridad.
+
+5. **Copia de Seguridad y Recuperación:**
+   - Ofrece soluciones de copia de seguridad y recuperación ante desastres rápidas y confiables con Azure Backup y Azure Site Recovery.
+
+6. **Optimización de Costos:**
+   - Permite optimizar los costos mediante reservas de Azure, Azure Spot Virtual Machines y la Ventaja Híbrida de Azure.
+   - Proporciona herramientas como Microsoft Cost Management para gestionar y optimizar el gasto en la nube.
+
+   Además ***Microsoft Azure*** también puede utilizarse para:
+
+- **Desarrollo y Pruebas**: Crear entornos de desarrollo y pruebas rápidamente sin necesidad de invertir en hardware físico.
+- **Aplicaciones Empresariales**: Ejecutar aplicaciones empresariales críticas, como bases de datos, ERP y CRM, en un entorno seguro y escalable.
+- **Computación de Alto Rendimiento**: Utilizar máquinas virtuales optimizadas para HPC para ejecutar cargas de trabajo intensivas en computación, como simulaciones científicas y análisis de datos.
+
+#### IBM Cloud:
+- IBM Cloud es una plataforma de computación en la nube ofrecida por IBM, diseñada para proporcionar una amplia gama de servicios y soluciones en la nube. Esta plataforma está preparada para la inteligencia artificial (IA), es segura y está diseñada para entornos híbridos.
+
+Alguna de sus **características mas importantes** son:
+
+1. **Computación y Servidores**:
+   - **IBM Cloud Virtual Servers**: Proporciona servidores virtuales escalables y flexibles para diversas cargas de trabajo.
+   - **IBM Bare Metal Servers**: Ofrece servidores físicos dedicados para un rendimiento máximo y control total.
+
+2. **Almacenamiento**:
+   - **IBM Cloud Object Storage**: Ofrece almacenamiento de objetos escalable y duradero para grandes volúmenes de datos.
+   - **IBM Block Storage**: Proporciona almacenamiento en bloque de alto rendimiento para aplicaciones críticas.
+
+3. **Bases de Datos**:
+   - **IBM Db2 on Cloud**: Una base de datos SQL completamente gestionada que ofrece alta disponibilidad y escalabilidad.
+   - **IBM Cloudant**: Una base de datos NoSQL distribuida y completamente gestionada para aplicaciones web y móviles.
+
+4. **IA y Machine Learning**:
+   - **IBM Watson**: Ofrece una suite de herramientas de IA y machine learning para desarrollar e implementar modelos de IA.
+   - **IBM Watson Studio**: Proporciona un entorno colaborativo para científicos de datos, desarrolladores y analistas.
+
+5. **Seguridad y Cumplimiento**:
+   - **IBM Cloud Security**: Proporciona soluciones de seguridad integradas para proteger datos y aplicaciones en la nube.
+   - **IBM Key Protect**: Ofrece gestión de claves de cifrado para proteger datos sensibles.
+
+Sus principales ventajas son:
+
+- **Resiliencia**: IBM Cloud está diseñado para ofrecer alta disponibilidad y recuperación ante desastres, asegurando que las aplicaciones y los datos estén siempre accesibles.
+- **Seguridad**: Proporciona un entorno seguro con múltiples capas de protección y cumplimiento de normativas.
+- **Escalabilidad**: Permite escalar recursos de manera flexible para adaptarse a las necesidades cambiantes del negocio.
+- **Innovación**: Ofrece acceso a tecnologías avanzadas, incluyendo IA y machine learning, para impulsar la innovación empresarial.
+ 
+<br>
+
+#### Otras plataformas IaaS:
+Hay muchas mas plataformas que ofrecen este tipo de servicio, las siguientes nos parecen dignas de mención dada su popularidad:
+
+- **DigitalOcean Droplets**: Si buscas una opción más económica pero aún potente, DigitalOcean ofrece Droplets que son fáciles de configurar y escalar. También proporcionan un control total sobre la configuración del servidor. El sitema de Droplets es novedoso de facil uso e intuitivo por lo que nos pareció conveniente nombrarlo.
 
 <br>
 
 - **Google Cloud Platform (GCP) Compute Engine**: GCP proporciona máquinas virtuales altamente personalizables y escalables. Con herramientas como Google Kubernetes Engine (GKE), puedes gestionar contenedores de manera eficiente, lo que es ideal para aplicaciones que necesitan escalar rápidamente.
 
-<br>
 
-- **Microsoft Azure Virtual Machines**: Azure ofrece una infraestructura de alto rendimiento con opciones de escalabilidad automática. Además, Azure proporciona un control detallado sobre la configuración de los servidores y la red, lo que puede ayudar a optimizar costos.
-
-<br>
-
-- **DigitalOcean Droplets**: Si buscas una opción más económica pero aún potente, DigitalOcean ofrece Droplets que son fáciles de configurar y escalar. También proporcionan un control total sobre la configuración del servidor.
-
-<br>
-
-- **IBM Cloud**: IBM Cloud ofrece infraestructura como servicio (IaaS) con un alto grado de personalización y control. Es ideal para aplicaciones que requieren un rendimiento constante y la capacidad de escalar rápidamente.
-
-<br> 
-
-## Analisis economico de los servicios
+## Analisis económico de los servicios
 
 - **Amazon Web Services (AWS)**: esta empresa ofrece un sistema de pago por uso para la mayoría de sus servicios.
 
