@@ -80,3 +80,17 @@ A continuación hablaremos en mas detalle de las ventajas de este modelo.
   - **$0.34 dólares la hora**.
   - **$189 dólares mensuales**, lo cual sería aproximadamente unos **180 euros**.
 
+ <br>
+
+- **Microsoft Azure Virtual Machines**: esta empresa ofrece un sistema de pago por uso para la mayoría de sus servicios.
+
+  Para esta empresa, suponiendo un servidor similar al del supuesto anterior, con las siguientes características:
+
+  - **8 vCPUs**.
+  - **16 GiB de memoria**.
+  - **Rendimiento de transferencia de hasta 10 Gbps**.
+
+  En un modelo de **pago por uso**, el costo mensual estimado sería de:
+
+  - **270€ mensuales**, el cual puede variar según la **región de despliegue** y el **tipo de soporte**.
+
