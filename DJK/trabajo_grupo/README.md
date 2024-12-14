@@ -62,3 +62,21 @@ A continuación hablaremos en mas detalle de las ventajas de este modelo.
 <br>
 
 - **IBM Cloud**: IBM Cloud ofrece infraestructura como servicio (IaaS) con un alto grado de personalización y control. Es ideal para aplicaciones que requieren un rendimiento constante y la capacidad de escalar rápidamente.
+
+<br> 
+
+## Analisis economico de los servicios
+
+- **Amazon Web Services (AWS)**: esta empresa ofrece un sistema de pago por uso para la mayoría de sus servicios.
+
+  Para esta empresa, escogiendo el servicio **EC2**, con una **instancia dedicada** para poder mantener un control sobre la configuración del servidor, y no compartir recursos con otros clientes, suponiendo unos picos elevados de **8 horas la mitad de días de la semana**, con una infraestructura de:
+
+  - **8 vCPUs**.
+  - **16 GiB de memoria**.
+  - **Rendimiento de red de hasta 10 Gigabit**.
+
+  Escogiendo una opción de pago **bajo demanda** para maximizar la flexibilidad, daría un costo mensual de:
+
+  - **$0.34 dólares la hora**.
+  - **$189 dólares mensuales**, lo cual sería aproximadamente unos **180 euros**.
+
