@@ -92,3 +92,16 @@ A continuación hablaremos en mas detalle de las ventajas de este modelo.
 
   - **270€ mensuales**, el cual puede variar según la **región de despliegue** y el **tipo de soporte**.
 
+ <br>
+
+- **IBM Cloud (Servidor Dedicado)**: Para IBM Cloud, suponiendo un servidor dedicado con las siguientes características:
+
+  - **8 vCPUs**.
+  - **16 GiB de memoria**.
+  - **Rendimiento de transferencia de hasta 1 Gbps**.
+  - **Ubicado en Europa Occidental**.
+
+  El costo mensual estimado sería un estimado de:
+
+  - **320€ mensuales**.
+
