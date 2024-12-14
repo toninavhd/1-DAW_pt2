@@ -82,9 +82,7 @@ A continuación hablaremos en mas detalle de las ventajas de este modelo.
 
  <br>
 
-- **Microsoft Azure Virtual Machines**: esta empresa ofrece un sistema de pago por uso para la mayoría de sus servicios.
-
-  Para esta empresa, suponiendo un servidor similar al del supuesto anterior, con las siguientes características:
+- **Microsoft Azure Virtual Machines**: Para esta empresa, suponiendo un servidor similar al del supuesto anterior, con las siguientes características:
 
   - **8 vCPUs**.
   - **16 GiB de memoria**.
