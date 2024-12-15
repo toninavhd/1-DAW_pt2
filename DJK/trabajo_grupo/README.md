@@ -176,3 +176,14 @@ Para realizar el calculo de precio con cada empresa, se tomara un supuesto de un
 Tras realizar el calculo de estas tres empresas, deja a Amazon Web Services como **la más asequible con 180 euros/mes**, seguido de Microsoft Azure Virtual Machines, con **270€ mensuales**, y siendo 
 IBM Cloud la que tiene el **costo más alto, con unos 320€ cada mes**.
 
+## Conclusión
+
+Para el problema escogido, tras analizar las empresas con sus funcionalidades y ventajas, además de sus análisis económico, la mejor opción es **Microsoft Azure Virtual Machines**, ya que al necesitar de escalabilidad de alta velocidad en los momentos de mayor tráfico, y de un control de los recursos, como se comenta en el análisis de empresas, **Microsoft Azure** dispone de una **escalabilidad automática**, según el uso, o **programada** en caso de que la necesidad de más recursos sea en intervalos de tiempos conocidos, y poder controlar los recursos necesarios para ahorrar costes. Al igual para optimizar aún más los costes, proporciona herramientas tales como **Microsoft Cost Management** para administrar el uso de la nube.
+
+Por el lado del alto rendimiento de la aplicación alojada, **Azure** se encarga de mejorar el rendimiento en red y almacenamiento debido a hardware personalizado, lo que permitirá una mejora en el funcionamiento de la aplicación.
+
+Además ofrece otras características como las **copias de seguridad** y **recuperación rápida** en caso de accidentes, acompañada de una gran compatibilidad con varios sistemas operativos, y una gran seguridad al cumplir con bastantes certificaciones y normativas de cumplimiento y seguridad.
+
+Y finalmente, por el lado del coste mensual, de las tres empresas analizadas, es la que ofrece un **precio medio**, de aproximadamente **270 euros mensuales**, beneficioso, ya que permite a la startup alojar su aplicación, satisfaciendo sus necesidades, y de disfrutar del resto de ventajas que ofrece Azure, a un **precio asequible**.
+
+
