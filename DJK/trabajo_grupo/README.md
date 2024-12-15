@@ -152,41 +152,27 @@ Hay muchas mas plataformas que ofrecen este tipo de servicio, las siguientes nos
 
 ## Analisis económico de los servicios
 
+Para realizar el calculo de precio con cada empresa, se tomara un supuesto de una maquina con 8 CPUs virtualizadas, 16 GB de memoria, un rendimiento de red de aproximadamente hasta 10 Gigabit, en una instancia dedicada, para no compartir los recursos con otros clientes, y en ubicación Europa Occidental. Siendo este un supuesto aproximado, ya que varia medianamente en cada empresa. 
+
 - **Amazon Web Services (AWS)**: esta empresa ofrece un sistema de pago por uso para la mayoría de sus servicios.
 
-  Para esta empresa, escogiendo el servicio **EC2**, con una **instancia dedicada** para poder mantener un control sobre la configuración del servidor, y no compartir recursos con otros clientes, suponiendo unos picos elevados de **8 horas la mitad de días de la semana**, con una infraestructura de:
-
-  - **8 vCPUs**.
-  - **16 GiB de memoria**.
-  - **Rendimiento de red de hasta 10 Gigabit**.
-
-  Escogiendo una opción de pago **bajo demanda** para maximizar la flexibilidad, daría un costo mensual de:
+  Para esta empresa, escogiendo el servicio **EC2**, suponiendo unos picos elevados de **8 horas la mitad de días de la semana**, Escogiendo una opción de pago **bajo demanda** para maximizar la flexibilidad,   daría un costo mensual de:
 
   - **$0.34 dólares la hora**.
   - **$189 dólares mensuales**, lo cual sería aproximadamente unos **180 euros**.
-
  <br>
-
-- **Microsoft Azure Virtual Machines**: Para esta empresa, suponiendo un servidor similar al del supuesto anterior, con las siguientes características:
-
-  - **8 vCPUs**.
-  - **16 GiB de memoria**.
-  - **Rendimiento de transferencia de hasta 10 Gbps**.
-
-  En un modelo de **pago por uso**, el costo mensual estimado sería de:
-
+ 
+- **Microsoft Azure Virtual Machines**: Para esta empresa , en un modelo de **pago por uso**, el costo mensual estimado sería de:
+  
   - **270€ mensuales**, el cual puede variar según la **región de despliegue** y el **tipo de soporte**.
-
  <br>
-
-- **IBM Cloud (Servidor Dedicado)**: Para IBM Cloud, suponiendo un servidor dedicado con las siguientes características:
-
-  - **8 vCPUs**.
-  - **16 GiB de memoria**.
-  - **Rendimiento de transferencia de hasta 1 Gbps**.
-  - **Ubicado en Europa Occidental**.
+ 
+- **IBM Cloud (Servidor Dedicado)**: Para IBM Cloud, a diferencia de las otras dos empresas, esta ofrece un rendimiento de red de hasta 1 Gbps, teniendo en cuenta esto y las caracteristicas del supuesto:
 
   El costo mensual estimado sería un estimado de:
 
   - **320€ mensuales**.
+
+Tras realizar el calculo de estas tres empresas, deja a Amazon Web Services como **la más asequible con 180 euros/mes**, seguido de Microsoft Azure Virtual Machines, con **270€ mensuales**, y siendo 
+IBM Cloud la que tiene el **costo más alto, con unos 320€ cada mes**.
 
