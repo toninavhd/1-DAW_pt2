@@ -68,7 +68,7 @@ SELECT COUNT(*) FROM alumnos
 
 -- 5 Cuántos alumnos hay por curso y nivel y cuántos tienen beca. Ordenados por curso y nivel de menor a mayor.
 
-SELECT curso, nivel, COUNT(*) AS totalalumnos, SUM(CASE WHEN beca > 0 THEN 1 ELSE 0 END) AS AlumnosBecados
+SELECT curso, nivel, COUNT(*) AS totalalumnos, SUM(beca) AS AlumnosBecados
 FROM alumnos
 GROUP BY curso, nivel
 ORDER BY nivel, curso;
@@ -78,7 +78,7 @@ ORDER BY nivel, curso;
 SELECT curso, nivel, AVG(beca) AS media_beca, SUM(beca) AS beca_total
 FROM alumnos
 GROUP BY curso, nivel
-HAVING AVG(Beca) > 200;
+HAVING AVG(beca) > 200;
 
 --7 Mostrar los dos meses con más cumpleaños
 
@@ -95,8 +95,8 @@ WHERE Beca = 0;
 
 --9 Alumnos entre 15 y 17 años, mostrar nombre y curso.
 
-SELECT Nombre, Curso
-FROM Alumnos
+SELECT nombre, curso
+FROM alumnos
 WHERE DATEDIFF(YEAR, fecha_nac, GETDATE()) BETWEEN 15 AND 17;
 
 --10 Curso con mayor numero de matriculados
@@ -105,3 +105,4 @@ SELECT TOP 1 curso AS curso, COUNT(*) AS total
 FROM alumnos
 GROUP BY curso
 ORDER BY total DESC;
+
