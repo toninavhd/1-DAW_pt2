@@ -28260,10 +28260,22 @@ SELECT game.Juego
 FROM Juego as game
 WHERE juego like '%FIFA%'
 
-SELECT game.Juego
+SELECT game.Juego, Plataforma
 FROM juego as game
 INNER JOIN JuegoPlataforma as jp
 on game.idjuego = jp.IdJuego
 INNER JOIN Plataforma as P
 on p.IdPlataforma = jp.IdPlataforma
 WHERE juego LIKE '%FIFA%'
+
+SELECT game.Juego, Plataforma, Distribuidor, Desarrollador
+FROM juego as game
+INNER JOIN JuegoPlataforma as jp
+on game.idjuego = jp.IdJuego
+INNER JOIN Plataforma as P
+on p.IdPlataforma = jp.IdPlataforma
+INNER JOIN Distribuidor as d
+on d.idDistribuidor=jp.idDistribuidor
+INNER JOIN Desarrollador as ds
+on ds.IdDesarrollador=jp.IdDesarrollador
+WHERE juego LIKE '%Tekken%'
