@@ -28267,7 +28267,7 @@ on game.idjuego = jp.IdJuego
 INNER JOIN Plataforma as P
 on p.IdPlataforma = jp.IdPlataforma
 WHERE juego LIKE '%FIFA%'
-
+--1
 SELECT game.Juego, Plataforma, Distribuidor, Desarrollador
 FROM juego as game
 INNER JOIN JuegoPlataforma as jp
@@ -28279,3 +28279,43 @@ on d.idDistribuidor=jp.idDistribuidor
 INNER JOIN Desarrollador as ds
 on ds.IdDesarrollador=jp.IdDesarrollador
 WHERE juego LIKE '%Tekken%'
+
+--2
+SELECT DISTINCT c.nombre
+FROM cliente as c
+INNER JOIN Puntuacion as v ON c.id = v.idcliente
+INNER JOIN juego j ON v.Id = j.IdJuego
+INNER JOIN plataforma pj ON j.IdJuego = pj.IdPlataforma
+INNER JOIN plataforma p ON pj.IdPlataforma = p.IdPlataforma
+WHERE p.Plataforma = 'PC';
+
+
+--3
+SELECT j.Juego, COUNT(pj.IdPlataforma) AS num_plataformas
+FROM juego as j
+INNER JOIN Plataforma as pj 
+ON j.IdJuego = pj.IdPlataforma
+WHERE j.IdTipo LIKE '%Simulacion%'
+GROUP BY j.Juego;
+
+
+--4 
+SELECT C.Nombre , Puntuacion
+FROM Cliente as C
+INNER JOIN Puntuacion as P
+ON C.id=P.Idcliente
+ORDER by C.Nombre
+
+--5
+SELECT j.Juego, Puntuacion
+FROM juego as j
+LEFT JOIN Puntuacion as v 
+ON j.IdJuego = v.idjuegoplataforma
+WHERE v.id IS NULL;
+
+
+--6
+SELECT j.Juego, AVG(v.Puntuacion) AS media_puntuacion, COUNT(v.puntuacion) AS num_puntuaciones
+FROM juego as j
+LEFT JOIN Puntuacion v ON j.IdJuego = v.Idcliente
+GROUP BY j.Juego;

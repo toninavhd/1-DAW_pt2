@@ -28,6 +28,7 @@ CREATE TABLE [DatosTuristas] (
   [turistas] numeric(10,0)
 )
 GO
+
 --
 -- Dumping data for table 'DatosTuristas'
 --
