@@ -7,6 +7,7 @@ def run(items: dict) -> bool:
     for value in values:
         if value != values[0]:
             all_same = False
+            #break
 
     return all_same
 
