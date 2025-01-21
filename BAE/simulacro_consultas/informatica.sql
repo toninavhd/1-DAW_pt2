@@ -1176,3 +1176,5 @@ LEFT JOIN FacturaComponente fc ON c.clave = fc.CodComponente
 WHERE fc.CodComponente IS NULL;
 
 --6 Borrar los artículos sin ventas del tipo BROTHER: FAX.
+DELETE FROM Componente
+WHERE clave = 'BROTHER: FAX';
