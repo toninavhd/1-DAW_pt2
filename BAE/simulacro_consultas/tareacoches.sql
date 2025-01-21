@@ -162,10 +162,11 @@ ALTER TABLE Alquiler CHECK CONSTRAINT fk_coche;
 
 --2 Crear las Foreign Key correspondientes al esquema siguiente:
 INSERT INTO Alquiler (id, id_cliente, id_coche, fecha_alquiler, fecha_devolucion) VALUES (4, 1, 999, '2025-01-21', '2025-01-28');
--- Esto debería fallar debido a la restricción de clave foránea
+
 
 --3.- Insertar un coche de un tipo diferente a los existentes en tipocoche.
 ALTER TABLE Alquiler DROP CONSTRAINT fk_coche;
+
 --4 Insertar un coche con tipo NULL.
 ALTER TABLE Alquiler
 ADD CONSTRAINT fk_coche FOREIGN KEY (id_coche) REFERENCES Coche(id);
