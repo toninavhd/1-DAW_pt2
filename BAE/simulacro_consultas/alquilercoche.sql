@@ -177,6 +177,7 @@ INNER JOIN ALQ_tipoCoche AS T ON Co.codTipo = T.CodTipo
 WHERE Cli.Nombre = 'Juana' AND Cli.Apellidos = 'Rodríguez' AND T.DescripcionTipo = 'Todo Terreno';
 
 -- 3.- Total de alquileres por tipo
+
 SELECT T.DescripcionTipo, COUNT(*)
 FROM ALQ_Alquiler AS A
 INNER JOIN ALQ_Coche Co ON A.Matricula = Co.Matricula
@@ -227,8 +228,7 @@ WHERE A.Matricula IS NULL;
 
 -- 10.- Días de alquiler por coche y cliente (DNI, nombre y apellidos)
 
-SELECT C.DNICliente, C.Nombre, C.Apellidos, A.Matricula, 
-       SUM(DATEDIFF(day, A.FechaInicio, A.FechaFinal)) AS DiasAlquiler
+SELECT C.DNICliente, C.Nombre, C.Apellidos, A.Matricula, SUM(DATEDIFF(day, A.FechaInicio, A.FechaFinal)) AS DiasAlquiler
 FROM ALQ_Alquiler AS A
 INNER JOIN ALQ_Cliente C ON A.DNICliente = C.DNICliente
 GROUP BY C.DNICliente, C.Nombre, C.Apellidos, A.Matricula;
