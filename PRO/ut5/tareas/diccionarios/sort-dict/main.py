@@ -1,8 +1,8 @@
 def run(unsorted_items: dict) -> list[tuple]:
-    items = list(unsorted_items.items())
-
-    for item in items:
-        sorted_items = (item[0], item[1])
+    
+    rev_sorted_items = sorted([(v, k) for k, v in unsorted_items.items()])
+    sorted_items = [(k, v) for v, k in rev_sorted_items]
+    
     return sorted_items
 
 
