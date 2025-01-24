@@ -234,7 +234,6 @@ ON UPDATE CASCADE;
 
 --17.- Borrar un coche con alquileres y ver lo que ocurre con sus alquileres.
 
-
 DELETE FROM ALQ_Coche WHERE Matricula = '1234ABC';
 
 
