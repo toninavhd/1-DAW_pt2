@@ -1,5 +1,5 @@
 def run(input_path: str, output_path: str) -> None:
-    
+
     with open(input_path) as input_file:
         for line in input_file:
             line = line.split(',')
