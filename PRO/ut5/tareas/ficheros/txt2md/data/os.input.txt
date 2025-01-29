@@ -1,0 +1,18 @@
+Clasificación de los Sistemas Operativos
+	Por su estructura
+		Estructura monolítica
+		Estructura jerárquica
+		Máquina virtual
+	Por los servicios que ofrecen
+		Por el número de usuarios
+			Monousuario
+			Multiusuario
+		Por el número de tareas
+			Monotarea
+			Multitarea
+		Por el número de procesadores
+			Uniproceso
+			Multiproceso
+	Por la forma en que ofrecen sus servicios
+		Sistemas Operativos en Red
+		Sistemas Operativos Distribuidos

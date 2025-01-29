@@ -1,0 +1,10 @@
+slug = "txt2md"
+bundle = [
+    "docs/README.pdf",
+    "tests/*.py",
+    "main.py",
+    "vendor.py",
+    "data/*input*",
+    "data/*expected*",
+]
+todo = ["main.py"]
