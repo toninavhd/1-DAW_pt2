@@ -4,14 +4,15 @@ def run(data_path: str, target_word: str) -> list:
     
     with open(data_path) as f:
         for line_num, line in enumerate(f, start=1):
-            words = line.lower().split()
-
+            words = line.split()
+            index_offset = 0
             for word in words:
                 clean_word = word.strip(delimiters)
                 if clean_word == target_word:
-                    column = line.lower().find(word) + 1
+                    column = line.index(word, index_offset) + 1
                     matches.append((line_num, column))
-            
+                index_offset += len(word) + 1
+                
     return matches
 
 
