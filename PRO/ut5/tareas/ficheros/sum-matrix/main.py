@@ -1,5 +1,5 @@
 def run(matrix1_path: str, matrix2_path: str, result_path: str) -> None:
-    with open(matrix1_path, encoding='utf-8') as matrix1, open(matrix2_path, encoding='utf-8') as matrix2, open(result_path, 'w', encoding='utf-8') as result:
+    with open(matrix1_path) as matrix1, open(matrix2_path) as matrix2, open(result_path, 'w', encoding='utf-8') as result:
         lines1 = matrix1.readlines()
         lines2 = matrix2.readlines()
 
