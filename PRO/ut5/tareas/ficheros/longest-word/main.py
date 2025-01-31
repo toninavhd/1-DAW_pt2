@@ -1,13 +1,13 @@
 def run(input_path: str) -> str:
+    SEPARATOR = ' \n,.;:()'
     longest_word = ''
-    separator = ' \n,.;:()'
 
     with open(input_path) as f:
         for line in f:
             words = line.split()
-            for word in words:             
+            for word in words:
                 if len(word) >= len(longest_word):
-                    longest_word = word.strip(separator)
+                    longest_word = word.strip(SEPARATOR)
     return longest_word
 
 

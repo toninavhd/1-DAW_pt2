@@ -4,6 +4,7 @@ def run(input_path: str, line_no: int) -> str | None:
         for num, next_line in enumerate(f, start=1):
             if num == line_no:
                 line = next_line.strip()
+                break
     return line
 
 
