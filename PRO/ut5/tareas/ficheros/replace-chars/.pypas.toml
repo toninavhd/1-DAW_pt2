@@ -1,0 +1,10 @@
+slug = "replace-chars"
+bundle = [
+    "docs/README.pdf",
+    "tests/*.py",
+    "main.py",
+    "vendor.py",
+    "data/*input*",
+    "data/*expected*",
+]
+todo = ["main.py"]
