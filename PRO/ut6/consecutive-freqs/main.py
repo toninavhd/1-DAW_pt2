@@ -1,11 +1,4 @@
 def cfreq(elements, /, string=False):
-    
-    if not elements:
-        if string:
-            return ""
-        else:
-            return []
-    
     result = []
     if elements:
         current_element = elements[0]
@@ -20,9 +13,9 @@ def cfreq(elements, /, string=False):
         result.append((current_element, count))
 
     if string:
-        result_string = ""
+        result_string = ''
         for element in result:
-            result_string += f"{element[0]}:{element[1]},"
+            result_string += f'{element[0]}:{element[1]},'
         return result_string.rstrip(',')
     else:
         return result
