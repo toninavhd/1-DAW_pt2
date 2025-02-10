@@ -7,19 +7,23 @@ def cfreq(elements, /, string=False):
             return []
     
     result = []
-    current_element = elements[0]
-    count = 0
-    for element in elements:
-        if element == current_element:
-            count += 1
-        else:
-            result.append((current_element, count))
-            current_element = element
-            count = 1
-    result.append((current_element, count))
+    if elements:
+        current_element = elements[0]
+        count = 1
+        for element in elements[1:]:
+            if element == current_element:
+                count += 1
+            else:
+                result.append((current_element, count))
+                current_element = element
+                count = 1
+        result.append((current_element, count))
 
     if string:
-        return ",".join([f"{elem}:{freq}" for elem, freq in result])
+        result_string = ""
+        for element in result:
+            result_string += f"{element[0]}:{element[1]},"
+        return result_string.rstrip(',')
     else:
         return result
 
