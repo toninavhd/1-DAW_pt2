@@ -142,3 +142,4 @@ WHERE e.salario > (SELECT AVG(e2.salario)
 FROM empleado e2
 WHERE e2.dept_no = e.dept_no)
 ORDER BY d.dnombre;
+
