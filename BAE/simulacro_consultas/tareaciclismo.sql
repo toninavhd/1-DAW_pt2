@@ -4716,7 +4716,7 @@ JOIN equipocampeonato ec ON e.idequipo = ec.idequipo
 JOIN campeonato c ON ec.idcampeonato = c.idcampeonato
 WHERE strftime('%m', c.fechainicio) = '06'
 GROUP BY e.idequipo, e.nombre
-HAVING COUNT(c.idcampeonato) > 2
+HAVING COUNT(c.idcampeonato) > 2;
 
 -- 2.- Mostrar las federaciones con clubs de equipos participantes en pruebas de más de quince días.
 SELECT DISTINCT f.Federacion
