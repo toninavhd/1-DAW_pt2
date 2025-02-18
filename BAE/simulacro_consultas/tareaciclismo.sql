@@ -4714,24 +4714,77 @@ SELECT e.idequipo, e.nombre
 FROM equipo e
 JOIN equipocampeonato ec ON e.idequipo = ec.idequipo
 JOIN campeonato c ON ec.idcampeonato = c.idcampeonato
-WHERE EXTRACT(MONTH FROM c.fechainicio) = 6
+WHERE strftime('%m', c.fechainicio) = '06'
 GROUP BY e.idequipo, e.nombre
 HAVING COUNT(c.idcampeonato) > 2
 
 -- 2.- Mostrar las federaciones con clubs de equipos participantes en pruebas de más de quince días.
+SELECT DISTINCT f.Federacion
+FROM Federacion f
+JOIN Club c ON f.Id = c.IdFederacion
+JOIN Equipo e ON c.idClub = e.IdClub
+JOIN EquipoCampeonato ec ON e.IdEquipo = ec.idequipo
+JOIN Campeonato ca ON ec.idcampeonato = ca.Id
+WHERE DATEDIFF(day, ca.Inicio, ca.Fin) > 15;
 
 -- 3.- Mostrar el total de participantes que hay inscritos en cada campeonato, dando todos los campeonatos.
+SELECT ca.Campeonato, SUM(ec.Nparticipantes) AS TotalParticipantes
+FROM Campeonato ca
+JOIN EquipoCampeonato ec ON ca.Id = ec.idcampeonato
+GROUP BY ca.Campeonato;
 
 -- 4.- Mostrar para cada federación el número de ciclistas en equipos de clubs de esa federación, sacando las federaciones con más de 3000 ciclistas y ordenados por ese número de mayor a menor.
+SELECT f.Federacion, SUM(e.NCiclistas) AS TotalCiclistas
+FROM Federacion f
+JOIN Club c ON f.Id = c.IdFederacion
+JOIN Equipo e ON c.idClub = e.IdClub
+GROUP BY f.Federacion
+HAVING SUM(e.NCiclistas) > 3000
+ORDER BY TotalCiclistas DESC;
 
 -- 5.- Mostrar los 3 equipos con menos participantes inscritos en competiciones de julio.
+SELECT TOP 3 e.Nombre, SUM(ec.Nparticipantes) AS TotalParticipantes
+FROM Equipo e
+JOIN EquipoCampeonato ec ON e.IdEquipo = ec.idequipo
+JOIN Campeonato ca ON ec.idcampeonato = ca.Id
+WHERE MONTH(ca.Inicio) = 7
+GROUP BY e.Nombre
+ORDER BY TotalParticipantes ASC;
 
 -- 6.- Mostrar los tipos de equipos con menos de tres equipos.
+SELECT te.Tipo, COUNT(e.IdEquipo) AS NumeroEquipos
+FROM TipoEquipo te
+JOIN Equipo e ON te.IdTipo = e.IdTipo
+GROUP BY te.Tipo
+HAVING COUNT(e.IdEquipo) < 3;
 
 -- 7.- Para cada mes dar el total de equipos inscritos (contados solo una vez aunque participen en más de una competición) y el total de participantes.
 
--- 8.- Mostrar los equipos que no participan en campeonatos de premios entre 5000 y 30000 euros.
+SELECT MONTH(ca.Inicio) AS Mes, COUNT(DISTINCT ec.idequipo) AS TotalEquipos, SUM(ec.Nparticipantes) AS TotalParticipantes
+FROM Campeonato ca
+JOIN EquipoCampeonato ec ON ca.Id = ec.idcampeonato
+GROUP BY MONTH(ca.Inicio);
 
+-- 8.- Mostrar los equipos que no participan en campeonatos de premios entre 5000 y 30000 euros.
+SELECT e.Nombre
+FROM Equipo e
+WHERE e.IdEquipo NOT IN (
+    SELECT DISTINCT ec.idequipo
+    FROM EquipoCampeonato ec
+    JOIN Campeonato ca ON ec.idcampeonato = ca.Id
+    WHERE ca.Premios BETWEEN 5000 AND 30000
+);
 -- 9.- Mostrar el total de participantes en el campeonatos con el mayor número de días.
+SELECT TOP 1 ca.Campeonato, SUM(ec.Nparticipantes) AS TotalParticipantes
+FROM Campeonato ca
+JOIN EquipoCampeonato ec ON ca.Id = ec.idcampeonato
+GROUP BY ca.Campeonato
+ORDER BY DATEDIFF(day, ca.Inicio, ca.Fin) DESC;
 
 -- 10.- Mostrar cuántos equipos tiene cada club inscritos en más de tres campeonatos.
+SELECT c.Club, COUNT(DISTINCT ec.idequipo) AS NumeroEquipos
+FROM Club c
+JOIN Equipo e ON c.idClub = e.IdClub
+JOIN EquipoCampeonato ec ON e.IdEquipo = ec.idequipo
+GROUP BY c.Club
+HAVING COUNT(DISTINCT ec.idcampeonato) > 3;
