@@ -1,6 +1,7 @@
 def run(data_path: str, target_word: str) -> list:
     DELIMITERS = " .,;:()'¡!"
     matches = []
+    target_word = target_word.lower()
 
     with open(data_path) as f:
         for line_num, line in enumerate(f, start=1):
