@@ -22,3 +22,21 @@ CREATE TABLE empleados (
     UNIQUE (apellidos, nombre)
 );
 
+--4. Ver los índices que tiene.
+
+-- 5. Añadir índice por fecha de nacimiento
+CREATE INDEX idx_fechanacimiento ON empleados (fechanacimiento);
+
+-- 6. Añadir índice por sueldo
+CREATE INDEX idx_sueldo ON empleados (sueldo);
+
+-- 7. Modificar lo siguiente en la tabla
+--a. Añadir campo dirección varchar(100)
+ALTER TABLE empleados ADD COLUMN direccion VARCHAR(100);
+
+-- b. Cambiar a no nulo seccion
+ALTER TABLE empleados ALTER COLUMN seccion SET NOT NULL;
+
+-- c. Validar que sueldo sean >0 y <10000
+ALTER TABLE empleados ADD CONSTRAINT chk_sueldo CHECK (sueldo > 0 AND sueldo
+< 10000);
