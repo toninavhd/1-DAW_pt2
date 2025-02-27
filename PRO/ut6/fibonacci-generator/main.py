@@ -1,6 +1,6 @@
 def fibonacci(n: int):
     result = 0
-    for values in range(0, n):
+    for values in range(n):
         result += values
         yield result
 
