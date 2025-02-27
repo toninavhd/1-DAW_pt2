@@ -1,10 +1,9 @@
-def cycle_alphabet(limit:int) -> str:
+def cycle_alphabet(num_chars: int):
     ALPHABET = 'abcdefghijklmnopqrstuvwxyz'
     ALPHABET_SIZE = len(ALPHABET)
-    f_limit = limit % ALPHABET_SIZE
-
-    return ALPHABET[:f_limit]
-
+    
+    for char in range(num_chars):
+        yield ALPHABET[char % ALPHABET_SIZE]
 
 
 # DO NOT TOUCH THE CODE BELOW

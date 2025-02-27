@@ -1,11 +1,10 @@
 def consecutive_seq(values:list, reps:int):
-    rep_counter = values[0]
-    for value in values:
-        if value in values[1:]:
-            if value == rep_counter[-1]:
-                rep_counter.append(value)
-
-        return len(rep_counter)
+    if len(values) < reps:
+        return None
+    if values[:reps] == [values[0]] * reps:
+        return values[0]
+    
+    return consecutive_seq(values[1:], reps)
 # DO NOT TOUCH THE CODE BELOW
 if __name__ == '__main__':
     import vendor

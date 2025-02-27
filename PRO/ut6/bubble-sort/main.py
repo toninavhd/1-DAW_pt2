@@ -1,10 +1,10 @@
-def bsort(values:list):
-    sorted_list = []
-    for value in values:
-        if value in values[1:]:
-            if value >= sorted_list[-1]:
-                sorted_list.append(value)
-    return sorted_list
+def bsort(values: list):
+    limit_range = len(values)
+    for num in range(limit_range):
+        for j in range(0, limit_range-num-1):
+            if values[j] > values[j+1]:
+                values[j], values[j+1] = values[j+1], values[j]
+    return values
 
 
 # DO NOT TOUCH THE CODE BELOW
