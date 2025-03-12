@@ -1,8 +1,8 @@
 def fibonacci(n: int):
-    result = 0
-    for values in range(n):
-        result += values
-        yield result
+    a, b = 0, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
 
 
 # DO NOT TOUCH THE CODE BELOW
