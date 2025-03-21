@@ -38,7 +38,6 @@ class Fraction:
 
     @staticmethod
     def gcd(a: int, b: int) -> int:
-        """Euclid's Algorithm"""
         while b > 0:
             a, b = b, a % b
         return a
