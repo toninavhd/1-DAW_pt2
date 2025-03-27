@@ -3,7 +3,7 @@ class File:
         self.path = path
         self.contents = []
 
-    def add_content(self, content: str):
+    def add_content(self, *content: str) -> None:
         self.contents.append(content)
 
     @property
