@@ -10,7 +10,7 @@ class InfiniteList:
         return len(self.items)
 
     def __setitem__(self, index: int, item) -> None:
-        diff = index + 1 - len(self.items) 
+        diff = index + 1 - len(self) 
         self.items += [self.fill_value] * diff
         self.items[index] = item
 
