@@ -40,3 +40,7 @@ class DNA:
         return self.stats
     
     def __mul__(self, other: DNA) -> DNA:
+        return
+
+    @classmethod
+     
