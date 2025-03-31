@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-
 class DNA:
     ADENINE = 'A'
     CYTOSINE = 'C'
