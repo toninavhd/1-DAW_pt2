@@ -1,11 +1,10 @@
 def getint():
-    is_integer = False
-    while not is_integer:
-        try:
-            n = int(input('Give me an integer number: '))
-            is_integer = True
-        except ValueError:
-            print('Not a valid integer. Try it again!')
+    try:
+        n = int(input('Give me an integer number: '))
+        return n
+    except ValueError:
+        print('Not a valid integer. Try it again!')
+        return getint()
 
 # DO NOT TOUCH THE CODE BELOW
 if __name__ == '__main__':
