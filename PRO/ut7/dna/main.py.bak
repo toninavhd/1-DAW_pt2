@@ -1,0 +1,71 @@
+from __future__ import annotations
+
+class DNA:
+    def __init__(self, sequence: str):
+        self.sequence = sequence.upper()
+
+    def __len__(self) -> int:
+        return len(self.sequence)
+    
+    def __str__(self) -> str:
+        return self.sequence
+    
+    @property
+    def adenines(self)-> int:
+        return self.sequence.count('A')
+    
+    @property
+    def cytosines(self) -> int:
+        return self.sequence.count('C')
+    
+    @property
+    def guanines(self) -> int:
+        return self.sequence.count('G')
+    
+    @property
+    def thymines(self) -> int:
+        return self.sequence.count('T')
+    
+    def __add__(self, other:DNA) -> DNA:
+        new_sequence = self.sequence + other.sequence
+        return DNA(new_sequence)
+
+    def stats(self) -> dict[str,float]:
+      total = len(self.sequence)
+      return {
+          'A': (self.adenines / total) * 100,
+          'C': (self.cytosines / total) * 100,
+          'G': (self.guanines / total) * 100,
+          'T': (self.thymines / total) * 100,
+      }
+    
+    def __mul__(self, other: DNA) -> DNA:
+        interleaved_seq = ''.join(
+            a + b for a, b in zip(self.sequence, other.sequence)
+        )
+        interleaved_seq += self.sequence[len(other.sequence):]
+        interleaved_seq += other.sequence[len(self.sequence):]
+        return DNA(interleaved_seq)
+
+    @classmethod
+    def build_from_file(cls, path:str) -> DNA:
+        with open(path, 'r') as file:
+            sequence = file.read().strip()
+        return cls(sequence)
+    
+    @classmethod
+    def dump_to_file(cls, path:str, *dna:DNA) -> None:
+        with open(path, 'w') as file:
+            file.write('\n'.join(str(d) for d in dna))
+
+    def __getitem__(self, index:int) -> str:
+        return self.sequence[index]
+    
+    def __setitem__(self, index:int, base:str) -> None:
+        valid_bases = 'ACGT'
+        if base.upper() not in valid_bases:
+            base = 'A'
+        sequence_list = list(self.sequence)
+        sequence_list[index] = base.upper()
+        self.sequence = ''.join(sequence_list)
+
