@@ -51,9 +51,6 @@ class IntegerStack:
     def __len__(self):
         return len(self.items)
 
-    def __str__(self):
-        return '\n'.join(map(str, self.items))
-
     def __add__(self, other: IntegerStack) -> IntegerStack:
         result = IntegerStack(max_size=self.max_size + other.max_size)
         result.items = other.items + self.items
@@ -62,6 +59,8 @@ class IntegerStack:
     def __iter__(self) -> IntegerStackIterator:
         return IntegerStackIterator(self)
 
+    def __str__(self):
+        return '\n'.join(str(item) for item in self.items)
 
 class IntegerStackIterator:
     def __init__(self, stack: IntegerStack):
