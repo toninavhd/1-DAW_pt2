@@ -29,18 +29,18 @@ class Date:
         if month in {4, 6, 9, 11}:
             return 30
         return 29 if Date.is_leap_year(year) else 28
-
+    @property
     def get_delta_days(self) -> int:
         days = sum(366 if Date.is_leap_year(y) else 365 for y in range(1900, self.year))
         days += sum(Date.get_days_in_month(m, self.year) for m in range(1, self.month))
         return days + self.day - 1
-
+    @property
     def weekday(self) -> int:
         return (self.get_delta_days() + 1) % 7
-
+    @property
     def is_weekend(self) -> bool:
         return self.weekday() in {0, 6}
-
+    @property
     def short_date(self) -> str:
         return f"{self.day:02}/{self.month:02}/{self.year}"
 
