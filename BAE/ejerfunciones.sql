@@ -84,7 +84,7 @@ begin
         from cliente
         order by id desc;
     end
-    
+
     else if @tabla = 'disco'
     BEGIN
         insert @tablasalida
@@ -110,4 +110,48 @@ go
 --
 select tabla,idmax
 from f_Ver3IdMax('disco');
+go
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+IF object_id('CrearRestriccion') IS NOT NULL
+DROP procedure [CrearRestriccion]
+go
+create procedure CrearRestriccion
+as
+declare @sentencia varchar(1000)
+declare @Tabla varchar(100)
+declare CUR cursor for
+select Tabla
+from ciclismo.dbo.datostablas;
+open CUR
+
+fetch next from CUR
+into @Tabla
+while @@FETCH_STATUS=0
+begin
+set @sentencia='alter table '+@tabla+
+' drop CONSTRAINT U_'+@tabla
+-- print @sentencia
+begin try
+exec(@sentencia)
+end try
+begin catch
+print 'Índice no existe: U_'+@tabla
+end catch
+set @sentencia='alter table '+@tabla+
+' add CONSTRAINT U_'+@tabla
+set @sentencia+=' unique(' + @Tabla +'); '
+exec (@sentencia)
+-- print @sentencia
+fetch next from CUR
+into @Tabla
+end
+close cur
+deallocate cur
+print'OK'
 go
