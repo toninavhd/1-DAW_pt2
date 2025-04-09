@@ -118,6 +118,7 @@ go
 
 
 ---------------------------------------------------------------------------------------------------------
+-- PROCEDIMIENTOS --
 IF object_id('CrearRestriccion') IS NOT NULL
 DROP procedure [CrearRestriccion]
 go
