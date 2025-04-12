@@ -2,7 +2,7 @@ import re
 
 
 def run(text: str) -> list[str]:
-    regexp = '\W([aeiouáéíóú][a-záéíóú]*)'
+    regexp = r'\W([aeiouáéíóú][a-záéíóú]*)'
     return re.findall(regexp,text, re.I)
 
 # DO NOT TOUCH THE CODE BELOW
