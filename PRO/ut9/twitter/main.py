@@ -1,5 +1,4 @@
 from __future__ import annotations
-import os
 import re
 import sqlite3
 
@@ -8,19 +7,20 @@ DB_PATH = 'twitter.db'
 def create_db(db_path: str) -> None:
     con = sqlite3.connect(db_path)
     cur = con.cursor()
+
     sql = """
     CREATE TABLE user (
         id INTEGER PRIMARY KEY,
-        username UNIQUE TEXT,
+        username TEXT UNIQUE,
         password TEXT,
         bio TEXT
-        )
+        );
     CREATE TABLE tweet (
         id INTEGER PRIMARY KEY,
         content TEXT,
         user_id INTEGER REFERENCES user(id),
         retweet_from INTEGER REFERENCES tweet(id)
-        )
+        );
     """
     cur.executescript(sql)
     con.commit()
