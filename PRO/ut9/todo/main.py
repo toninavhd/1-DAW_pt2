@@ -1,44 +1,52 @@
 from __future__ import annotations
 import sqlite3
+DB_PATH = 'todo.db'
 
-def create_db(db_path:str) -> None:
+def create_db(db_path: str) -> None:
     con = sqlite3.connect(db_path)
     cur = con.cursor()
     sql = """
     CREATE TABLE task (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        id INTEGER PRIMARY KEY,
         name TEXT,
         done BOOLEAN
         )
     """
     cur.execute(sql)
+    con.commit()
+    con.close()
 
 
 class Task:
-    con = sqlite3.connect('db_path')
+    con = sqlite3.connect(DB_PATH)
+    con.row_factory = sqlite3.Row
     cur = con.cursor()
+
     def __init__(self, name: str, done: bool = False, id: int = -1):
         self.name = name
         self.done = done
         self.id = id
     
     def save(self) -> None:
-        if self.id == -1:
-            sql = "INSERT INTO task (name, done) VALUES (?, ?)"
-            self.cur.execute(sql, (self.name, self.done))
-            self.id = self.cur.lastrowid
+        sql = 'INSERT INTO task (name, done) VALUES (?, ?)'
+        data = (self.name, self.done)
+        Task.cur.execute(sql, data)
+        self.id = Task.cur.lastrowid
+        Task.con.commit()
 
     def update(self) -> None:
-        sql = "UPDATE task SET name = ?, done = ? WHERE id = ?"
-        self.cur.execute(sql, (self.name, self.done, self.id))
+        sql = 'UPDATE task SET name = ?, done = ? WHERE id = ?'
+        data = (self.name, self.done, self.id)
+        Task.cur.execute(sql, data)
+        Task.con.commit()
 
     def check(self) -> None:
-        sql = "UPDATE task SET done = ? WHERE id = ?"
-        self.cur.execute(sql, (True, self.id))
-    
+        self.done = True
+        self.update()
+
     def uncheck(self) -> None:
-        sql = "UPDATE task SET done = ? WHERE id = ?"
-        self.cur.execute(sql, (False, self.id))
+        self.done = False
+        self.update()
 
     def __repr__(self):
         if self.done:
@@ -46,9 +54,11 @@ class Task:
         else:
             return f"[ ] {self.name} (id={self.id})"
     
-    def from_db_row(cls, row: sqlite3.Row) -> 'Task':
-        return cls(row['name'], row['done'], row['id'])
+    @classmethod
+    def from_db_row(cls, row: sqlite3.Row) -> Task:
+        return cls(row['name'], bool(row['done']), row['id'])
     
+    @classmethod
     def get(cls, task_id: int) -> Task:
         sql = "SELECT * FROM task WHERE id = ?"
         cls.cur.execute(sql, (task_id,))
@@ -58,8 +68,10 @@ class Task:
         else:
             return None
 
+
 class ToDo:
-    con = sqlite3.connect('db_path')
+    con = sqlite3.connect(DB_PATH)
+    con.row_factory = sqlite3.Row
     cur = con.cursor()
     
     def get_tasks(self, done: int = -1):
