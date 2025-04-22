@@ -6,7 +6,7 @@ def create_db(db_path: str) -> None:
     con = sqlite3.connect(db_path)
     cur = con.cursor()
     sql = """
-    CREATE TABLE task (
+    CREATE TABLE tasks (
         id INTEGER PRIMARY KEY,
         name TEXT,
         done BOOLEAN
@@ -28,14 +28,14 @@ class Task:
         self.id = id
     
     def save(self) -> None:
-        sql = 'INSERT INTO task (name, done) VALUES (?, ?)'
+        sql = 'INSERT INTO tasks (name, done) VALUES (?, ?)'
         data = (self.name, self.done)
         Task.cur.execute(sql, data)
         self.id = Task.cur.lastrowid
         Task.con.commit()
 
     def update(self) -> None:
-        sql = 'UPDATE task SET name = ?, done = ? WHERE id = ?'
+        sql = 'UPDATE tasks SET name = ?, done = ? WHERE id = ?'
         data = (self.name, self.done, self.id)
         Task.cur.execute(sql, data)
         Task.con.commit()
@@ -50,7 +50,7 @@ class Task:
 
     def __repr__(self):
         if self.done:
-            return f"[x] {self.name} (id={self.id})"
+            return f"[X] {self.name} (id={self.id})"
         else:
             return f"[ ] {self.name} (id={self.id})"
     
@@ -60,7 +60,7 @@ class Task:
     
     @classmethod
     def get(cls, task_id: int) -> Task:
-        sql = "SELECT * FROM task WHERE id = ?"
+        sql = "SELECT * FROM tasks WHERE id = ?"
         cls.cur.execute(sql, (task_id,))
         row = cls.cur.fetchone()
         if row:
@@ -76,11 +76,11 @@ class ToDo:
     
     def get_tasks(self, done: int = -1):
         if done == -1:
-            sql = "SELECT * FROM task"
+            sql = "SELECT * FROM tasks"
         elif done == 0:
-            sql = "SELECT * FROM task WHERE done = 0"
+            sql = "SELECT * FROM tasks WHERE done = 0"
         elif done == 1:
-            sql = "SELECT * FROM task WHERE done = 1"
+            sql = "SELECT * FROM tasks WHERE done = 1"
         self.cur.execute(sql)
         rows = self.cur.fetchall()
         for row in rows:
