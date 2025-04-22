@@ -53,3 +53,18 @@ BEGIN
         ORDER BY mes
 
     OPEN cur_Ventas
+
+    FETCH NEXT FROM cur_Ventas INTO @mes, @importe
+
+    SET @acumulado = 0
+
+    WHILE @@FETCH_STATUS = 0
+    BEGIN
+        SET @acumulado = @acumulado + @importe
+        PRINT 'Mes: ' + @mes + ', Importe: ' + CONVERT(varchar, @importe) + ', Acumulado: ' + CONVERT(varchar, @acumulado)
+        FETCH NEXT FROM cur_Ventas INTO @mes, @importe
+    END
+
+    CLOSE cur_Ventas
+    DEALLOCATE cur_Ventas
+END

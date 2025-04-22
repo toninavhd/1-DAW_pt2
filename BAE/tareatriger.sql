@@ -1,8 +1,9 @@
-Actividad con Trigger - Insert:
+/*Actividad con Trigger - Insert:
 Una empresa almacena los datos de sus empleados en una tabla
 denominada "empleados" y en otra tabla llamada "secciones", el
-código de la sección y el sueldo máximo de cada una de ellas.
---1- Elimine las tablas si existen:
+código de la sección y el sueldo máximo de cada una de ellas.*/
+
+-- 1- Elimine las tablas si existen:
 if object_id('empleados') is not null
 drop table empleados;
 if object_id('secciones') is not null
