@@ -11,16 +11,16 @@ def create_db(db_path: str) -> None:
     sql = """
     CREATE TABLE user (
         id INTEGER PRIMARY KEY,
-        username UNIQUE TEXT,
+        username TEXT UNIQUE,
         password TEXT,
         bio TEXT
-        )
+        );
     CREATE TABLE tweet (
         id INTEGER PRIMARY KEY,
         content TEXT,
         user_id INTEGER REFERENCES user(id),
         retweet_from INTEGER REFERENCES tweet(id)
-        )
+        );
     """
     cur.executescript(sql)
     con.commit()
@@ -46,22 +46,21 @@ class User:
         User.con.commit()
         self.user_id = self.cur.lastrowid 
         
-    
     def login(self, password: str) -> None:
         if self.password == password:
             self.logged = True
     
     def tweet(self, content: str) -> Tweet:
         if not self.logged:
-            raise TwitterError("User not logged in")
+            raise TwitterError(f'User {self.username} is not logged in!')
         if len(content) > 280:
-            raise TwitterError("Tweet has more than 280 chars")
+            raise TwitterError('Tweet has more than 280 chars!')
         new_tweet = Tweet(content, self.user_id)
         new_tweet.save()
         return new_tweet
     
     def __repr__(self):
-        return f'{self.username}: {self.bio})'
+        return f'{self.username}: {self.bio}'
     
     @classmethod
     def from_db_row(cls, row: sqlite3.Row) -> User:
@@ -82,13 +81,12 @@ class Tweet:
         self.con = sqlite3.connect(DB_PATH)
         self.con.row_factory = sqlite3.Row
         self.cur = self.con.cursor()
-        self.content = content
         self.retweet_from = retweet_from
         self.tweet_id = tweet_id
 
     def save(self) -> None:
         sql = 'INSERT INTO tweet (contetnt, user_id, retweet_from) VALUES (?, ?, ?)'
-        data = (self.content, self.user_id, self.retweet_from)
+        data = (self.content, User.user_id, self.retweet_from)
         self.cur.execute(sql, data)
         self.tweet_id = self.cur.lastrowid
         self.con.commit()
@@ -101,8 +99,8 @@ class Tweet:
     def content(self) -> str:
         if self.retweet_from != 0:
             sql = 'SELECT content FROM tweet WHERE id = ?'
-            self.content = Tweet.cur.execute(sql, (self.retweet_from,)).fetchone()['content']
-        return self.content
+            content = Tweet.cur.execute(sql, (self.retweet_from,)).fetchone()['content']
+        return content
     
     @property
     def is_retweet(self) -> bool:
@@ -119,8 +117,8 @@ class Twitter:
     con.row_factory = sqlite3.Row
     cur = con.cursor()
     def add_user(self, username: str, password: str, bio: str = '') -> User:
-        password_regxp = r'[@=]\d{2,4}[a-z]{2,4}[!*]$'
-        if not re.match(password_regxp, password):
+        password_regxp = r'[@=]\d{2,4}[a-z]{2,4}[!*]'
+        if not re.match(password_regxp, password, re.I):
             raise TwitterError('Password does not follow security rules!')
         new_user = User(username, password, bio)
         new_user.save()
@@ -130,7 +128,7 @@ class Twitter:
         sql = 'SELECT * FROM user WHERE id = ?'
         if match := self.cur.execute(sql, (user_id,)).fetchone():
             return User.from_db_row(match)
-        raise TwitterError('User with id {user_id} does not exist')
+        raise TwitterError(f'User with id {user_id} does not exist!')
 
 class TwitterError(Exception):
     def __init__(self, message=''):
