@@ -79,6 +79,7 @@ class Tweet:
 
     def __init__(self, content: str = '', retweet_from: int = 0, tweet_id: int = 0):
         self.con = sqlite3.connect(DB_PATH)
+        self.content = content
         self.con.row_factory = sqlite3.Row
         self.cur = self.con.cursor()
         self.retweet_from = retweet_from
@@ -88,8 +89,8 @@ class Tweet:
         sql = 'INSERT INTO tweet (contetnt, user_id, retweet_from) VALUES (?, ?, ?)'
         data = (self.content, User.user_id, self.retweet_from)
         self.cur.execute(sql, data)
-        self.tweet_id = self.cur.lastrowid
         self.con.commit()
+        self.tweet_id = self.cur.lastrowid
 
     @classmethod
     def from_db_row(cls, row: sqlite3.Row) -> Tweet:
