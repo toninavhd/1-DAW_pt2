@@ -1,5 +1,6 @@
 from __future__ import annotations
 import sqlite3
+
 DB_PATH = 'todo.db'
 
 def create_db(db_path: str) -> None:
@@ -31,8 +32,9 @@ class Task:
         sql = 'INSERT INTO tasks (name, done) VALUES (?, ?)'
         data = (self.name, self.done)
         Task.cur.execute(sql, data)
-        self.id = Task.cur.lastrowid
         Task.con.commit()
+        self.id = Task.cur.lastrowid
+        
 
     def update(self) -> None:
         sql = 'UPDATE tasks SET name = ?, done = ? WHERE id = ?'
@@ -50,9 +52,9 @@ class Task:
 
     def __repr__(self):
         if self.done:
-            return f"[X] {self.name} (id={self.id})"
+            return f'[X] {self.name} (id={self.id})'
         else:
-            return f"[ ] {self.name} (id={self.id})"
+            return f'[ ] {self.name} (id={self.id})'
     
     @classmethod
     def from_db_row(cls, row: sqlite3.Row) -> Task:
@@ -60,7 +62,7 @@ class Task:
     
     @classmethod
     def get(cls, task_id: int) -> Task:
-        sql = "SELECT * FROM tasks WHERE id = ?"
+        sql = 'SELECT * FROM tasks WHERE id = ?'
         cls.cur.execute(sql, (task_id,))
         row = cls.cur.fetchone()
         if row:
@@ -76,24 +78,24 @@ class ToDo:
     
     def get_tasks(self, done: int = -1):
         if done == -1:
-            sql = "SELECT * FROM tasks"
+            sql = 'SELECT * FROM tasks'
         elif done == 0:
-            sql = "SELECT * FROM tasks WHERE done = 0"
+            sql = 'SELECT * FROM tasks WHERE done = 0'
         elif done == 1:
-            sql = "SELECT * FROM tasks WHERE done = 1"
+            sql = 'SELECT * FROM tasks WHERE done = 1'
         self.cur.execute(sql)
         rows = self.cur.fetchall()
         for row in rows:
             yield Task.from_db_row(row)
     
-    def add_task(self, task: Task) -> None:
-        task.save()
+    def add_task(self, name: str) -> None:
+        Task(name).save()
         self.con.commit()      
 
-    def complete_task(self, task: Task) -> None:
-        task.check()
+    def complete_task(self, task_id: int) -> None:
+        Task.get(task_id).check()
         self.con.commit()
 
-    def reopen_task(self, task: Task) -> None:
-        task.uncheck()
+    def reopen_task(self, task_id: int) -> None:
+        Task.get(task_id).uncheck()
         self.con.commit()
