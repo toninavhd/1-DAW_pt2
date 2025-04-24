@@ -39,6 +39,19 @@ class User:
         self.id = user_id
         self.logged = False
     
+    def __repr__(self):
+        return f'{self.username}: {self.bio}'
+    
+    @classmethod
+    def from_db_row(cls, row: sqlite3.Row) -> User:
+        return cls(row['username'], row['password'], row['bio'], row['id'])
+
+    @property
+    def tweets(self):
+        sql = 'SELECT * FROM tweet WHERE user_id = ?'
+        for row in User.cur.execute(sql, (self.id,)):
+            yield Tweet.from_db_row(row)
+
     def save(self) -> None:
         sql = 'INSERT INTO user (username, password, bio) VALUES (?, ?, ?)'
         data = (self.username, self.password, self.bio)
@@ -55,12 +68,13 @@ class User:
         self.logged = False
         return False
 
-    
     def tweet(self, content: str) -> Tweet:
+        MAX_TW_LEN = 280
+
         if not self.logged:
             raise TwitterError(f'User {self.username} is not logged in!')
-        if len(content) > 280:
-            raise TwitterError('Tweet has more than 280 chars!')
+        if len(content) > MAX_TW_LEN:
+            raise TwitterError(f'Tweet has more than {MAX_TW_LEN} chars!')
         new_tweet = Tweet(content, self.id)
         new_tweet.save()
         return new_tweet
@@ -74,19 +88,6 @@ class User:
         new_retweet.save()
         return new_retweet
     
-    def __repr__(self):
-        return f'{self.username}: {self.bio}'
-    
-    @classmethod
-    def from_db_row(cls, row: sqlite3.Row) -> User:
-        return cls(row['username'], row['password'], row['bio'], row['id'])
-
-    @property
-    def tweets(self):
-        sql = 'SELECT * FROM tweet WHERE user_id = ?'
-        for row in User.cur.execute(sql, (self.id,)):
-            yield Tweet.from_db_row(row)
-
 class Tweet:
     con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
@@ -97,17 +98,12 @@ class Tweet:
         self.user_id = user_id
         self.retweet_from = retweet_from
         self.id = tweet_id
-
-    def save(self, user: User = None) -> None:
-        if user is not None:
-            self.user_id = user.id
-
-        sql = 'INSERT INTO tweet (content, user_id, retweet_from) VALUES (?, ?, ?)'
-        data = (self._content, self.user_id, self.retweet_from)
-        Tweet.cur.execute(sql, data)
-        Tweet.con.commit()
-        self.id = Tweet.cur.lastrowid
-
+    
+    def __repr__(self):
+        if self.retweet_from != 0:
+            return f'[RT] {self.content} (id={self.id})'
+        return f'{self.content} (id={self.id})'
+    
     @classmethod
     def from_db_row(cls, row: sqlite3.Row) -> Tweet:
         return cls(row['content'], row['user_id'], row['retweet_from'], row['id'])
@@ -123,11 +119,17 @@ class Tweet:
     @property
     def is_retweet(self) -> bool:
         return self.retweet_from != 0
-    
-    def __repr__(self):
-        if self.retweet_from != 0:
-            return f'[RT] {self.content} (id={self.id})'
-        return f'{self.content} (id={self.id})'
+
+    def save(self, user: User = None) -> None:
+
+        if user is not None:
+            self.user_id = user.id
+
+        sql = 'INSERT INTO tweet (content, user_id, retweet_from) VALUES (?, ?, ?)'
+        data = (self._content, self.user_id, self.retweet_from)
+        Tweet.cur.execute(sql, data)
+        Tweet.con.commit()
+        self.id = Tweet.cur.lastrowid
     
 class Twitter:
     con = sqlite3.connect(DB_PATH)
