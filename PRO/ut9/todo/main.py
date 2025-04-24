@@ -17,7 +17,6 @@ def create_db(db_path: str) -> None:
     con.commit()
     con.close()
 
-
 class Task:
     con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
@@ -28,28 +27,6 @@ class Task:
         self.done = done
         self.id = id
     
-    def save(self) -> None:
-        sql = 'INSERT INTO tasks (name, done) VALUES (?, ?)'
-        data = (self.name, self.done)
-        Task.cur.execute(sql, data)
-        Task.con.commit()
-        self.id = Task.cur.lastrowid
-        
-
-    def update(self) -> None:
-        sql = 'UPDATE tasks SET name = ?, done = ? WHERE id = ?'
-        data = (self.name, self.done, self.id)
-        Task.cur.execute(sql, data)
-        Task.con.commit()
-
-    def check(self) -> None:
-        self.done = True
-        self.update()
-
-    def uncheck(self) -> None:
-        self.done = False
-        self.update()
-
     def __repr__(self):
         if self.done:
             return f'[X] {self.name} (id={self.id})'
@@ -70,6 +47,26 @@ class Task:
         else:
             return None
 
+    def save(self) -> None:
+        sql = 'INSERT INTO tasks (name, done) VALUES (?, ?)'
+        data = (self.name, self.done)
+        Task.cur.execute(sql, data)
+        Task.con.commit()
+        self.id = Task.cur.lastrowid
+        
+    def update(self) -> None:
+        sql = 'UPDATE tasks SET name = ?, done = ? WHERE id = ?'
+        data = (self.name, self.done, self.id)
+        Task.cur.execute(sql, data)
+        Task.con.commit()
+
+    def check(self) -> None:
+        self.done = True
+        self.update()
+
+    def uncheck(self) -> None:
+        self.done = False
+        self.update()
 
 class ToDo:
     con = sqlite3.connect(DB_PATH)
