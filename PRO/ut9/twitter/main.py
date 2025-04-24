@@ -113,10 +113,6 @@ class Tweet:
             return f'[RT] {self.content} (id={self.tweet_id})'
         else:
             return f'{self.content} (id={self.tweet_id})'
-        
-    @classmethod
-    def from_db_row(cls, row: sqlite3.Row) -> Tweet:
-        return cls(row['content'], row['retweet_from'], row['id'])
     
 class Twitter:
     con = sqlite3.connect('twitter.db')
