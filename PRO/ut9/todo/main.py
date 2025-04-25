@@ -30,8 +30,7 @@ class Task:
     def __repr__(self):
         if self.done:
             return f'[X] {self.name} (id={self.id})'
-        else:
-            return f'[ ] {self.name} (id={self.id})'
+        return f'[ ] {self.name} (id={self.id})'
     
     @classmethod
     def from_db_row(cls, row: sqlite3.Row) -> Task:
@@ -43,9 +42,8 @@ class Task:
         cls.cur.execute(sql, (task_id,))
         row = cls.cur.fetchone()
         if row:
-            return cls.from_db_row(row)
-        else:
-            return None
+            return cls.from_db_row(row)        
+        return None
 
     def save(self) -> None:
         sql = 'INSERT INTO tasks (name, done) VALUES (?, ?)'
@@ -87,12 +85,9 @@ class ToDo:
     
     def add_task(self, name: str) -> None:
         Task(name).save()
-        self.con.commit()      
 
     def complete_task(self, task_id: int) -> None:
         Task.get(task_id).check()
-        self.con.commit()
 
     def reopen_task(self, task_id: int) -> None:
         Task.get(task_id).uncheck()
-        self.con.commit()
