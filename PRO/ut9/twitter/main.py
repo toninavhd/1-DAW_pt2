@@ -150,5 +150,4 @@ class Twitter:
         raise TwitterError(f'User with id {user_id} does not exist!')
 
 class TwitterError(Exception):
-    def __init__(self, message=''):
-        super().__init__(message)
+    pass
