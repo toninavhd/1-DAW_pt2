@@ -121,8 +121,7 @@ class Tweet:
         return self.retweet_from != 0
 
     def save(self, user: User = None) -> None:
-
-        if user is not None:
+        if user:
             self.user_id = user.id
 
         sql = 'INSERT INTO tweet (content, user_id, retweet_from) VALUES (?, ?, ?)'
