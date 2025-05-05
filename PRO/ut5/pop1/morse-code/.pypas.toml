@@ -1,0 +1,9 @@
+slug = "morse-code"
+bundle = [
+    "docs/README.pdf",
+    "tests/*.py",
+    "main.py",
+    "vendor.py",
+    "data/signals.morse",
+]
+todo = ["main.py"]

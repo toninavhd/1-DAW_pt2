@@ -1,0 +1,22 @@
+def run(morse_path: str, sentence: str) -> str:
+    # ALPHANUMERICS = 'ABCDEFGHIJKLMOPQRSTUVWXYZ1234567890'
+
+    with open(morse_path) as morse_code:
+        for line in morse_code:
+            morse = dict(letter=line[0], code=line[1:].strip())
+
+        for word in sentence.split():
+            if char in word.isalnum:
+                
+
+                
+
+
+    return morse_sentence
+
+
+# DO NOT TOUCH THE CODE BELOW
+if __name__ == '__main__':
+    import vendor
+
+    vendor.launch(run)
