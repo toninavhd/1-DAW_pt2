@@ -67,7 +67,7 @@ class SIM(DbHandler):
     def unlock_required(method):
         def wrapper(self,*args,**kwargs):
             if not self.unlocked:
-                raise SMSError('SMS is locked')
+                raise SMSError('SMS is locked', self)
             return method(self, *args, **kwargs)
         return wrapper        
 
