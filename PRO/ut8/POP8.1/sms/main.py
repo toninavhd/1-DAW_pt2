@@ -39,8 +39,8 @@ class SMS(DbHandler):
         
 
     def send(self) -> None:
-        sql = 'INSERT INTO activity (sender, recipient, message) VALUES(?,?,?)'
-        self.cur.execute(sql,(self.sender , self.recipient, self.message))
+        sql = 'INSERT INTO activity (sender, recipient, message) VALUES (?,?,?)'
+        self.cur.execute(sql,(self.sender, self.recipient, self.message))
         self.con.commit()
 
     def __str__(self):
@@ -60,8 +60,6 @@ class SIM(DbHandler):
         correct_puk = sim_data['puk']
         if pin == correct_pin or puk == correct_puk:
             self.unlocked = True
-        if not self.phone_number:
-            self.unlocked = False
         
     @staticmethod
     def unlock_required(method):
@@ -88,7 +86,7 @@ class SIM(DbHandler):
         else:
             self.cur.execute(sql_2,(self.phone_number,))
         for row in self.cur.fetchall():
-            yield (row['sender'],row['recipient'], row['message'])
+            yield (row['sender'], row['recipient'], row['message'])
 
 class SMSError(Exception):
     def __init__(self, message: str, db_handler: DbHandler):
