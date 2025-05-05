@@ -7,7 +7,6 @@ DB_PATH = ':memory:'
 
 class DbHandler:
     def __init__(self, db_path: str = DB_PATH):
-        self.db_path = db_path
         self.con = sqlite3.connect(db_path)
         self.con.row_factory = sqlite3.Row
         self.cur = self.con.cursor()
