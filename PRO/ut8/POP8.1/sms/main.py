@@ -1,4 +1,5 @@
 from __future__ import annotations
+from collections import namedtuple
 import re
 import sqlite3
 
@@ -17,14 +18,15 @@ class DbHandler:
             id PRIMARY KEY,
             sender TEXT,
             recipient TEXT,
-            message TEXT);
+            message TEXT
+            );
 
             CREATE TABLE access(
             phone_number PRIMARY KEY,
             pin TEXT,
             puk TEXT
             )
-            ;
+;
 """
         self.cur.executescript(sql)
         self.con.commit()
@@ -47,7 +49,8 @@ class SMS(DbHandler):
         return f'From: {self.sender}\nTo: {self.recipient}\n---\n{self.message}'
 
 class SIM(DbHandler):
-
+    SMSRecord = namedtuple('SMSRecord', ['sender', 'recipient', 'message'])
+    
     def __init__(self, phone_number: str):
         super().__init__()
         self.phone_number = phone_number
@@ -56,6 +59,8 @@ class SIM(DbHandler):
     def unlock(self, pin: str, *, puk: str = '') -> None:
         sql = 'SELECT pin, puk FROM access WHERE phone_number=?'
         sim_data = self.cur.execute(sql,(self.phone_number,)).fetchone()
+        if sim_data is None:
+            raise SMSError('Phone number does not exist', self)
         correct_pin = sim_data['pin']
         correct_puk = sim_data['puk']
         if pin == correct_pin or puk == correct_puk:
@@ -71,10 +76,10 @@ class SIM(DbHandler):
 
     @unlock_required
     def send_sms(self, *, recipient: str, message: str) -> None:
-        regxp = r'^\+?\d{2}?\s?[67]\d{8}$'
-        if not re.match(regxp,recipient):
+        regxp = r'^\+?\d{1,3}?\s?\d{8,15}$'
+        if not re.match(regxp, recipient):
             raise SMSError('Recipient has invalid phone format', self)
-        sms = SMS(self.phone_number,recipient,message)
+        sms = SMS(self.phone_number, recipient, message)
         sms.send()
 
     @unlock_required
@@ -82,11 +87,11 @@ class SIM(DbHandler):
         sql_1 = 'SELECT * FROM activity WHERE sender =?'
         sql_2 = 'SELECT * FROM activity WHERE recipient =?'
         if sent:
-            self.cur.execute(sql_1,(self.phone_number,))
+            query = self.cur.execute(sql_1,(self.phone_number,))
         else:
-            self.cur.execute(sql_2,(self.phone_number,))
-        for row in self.cur.fetchall():
-            yield (row['sender'], row['recipient'], row['message'])
+            query = self.cur.execute(sql_2,(self.phone_number,))
+        for row in query.fetchall():
+            yield SMS(row['sender'], row['recipient'], row['message'])
 
 class SMSError(Exception):
     def __init__(self, message: str, db_handler: DbHandler):
