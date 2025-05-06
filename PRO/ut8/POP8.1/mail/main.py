@@ -24,12 +24,11 @@ class DbHandler:
             recipient TEXT,
             subject TEXT,
             body TEXT
-            )
+            );
         """
         self.cur.executescript(sql)
         self.con.commit()
-
-
+        
 class Mail(DbHandler):
     def __init__(self, sender: str, recipient: str, subject: str, body: str):
         super().__init__()
@@ -54,10 +53,11 @@ class MailServer(DbHandler):
         self.logged = False
 
     def login(self, password: str) -> None:
-        sql = 'SELECT password FROM login WHERE username=?'
+        sql = 'SELECT * FROM login WHERE username=?'
         self.cur.execute(sql, (self.username,))
         data = self.cur.fetchone()
         if data and data['password'] == password:
+            self.domain = data['domain']
             self.logged = True
         else:
             self.logged = False
@@ -73,15 +73,12 @@ class MailServer(DbHandler):
 
     @property
     def sender(self) -> str:
-        sql = 'SELECT domain FROM login WHERE username=?'
-        self.cur.execute(sql, (self.username,))
-        data = self.cur.fetchone()
-        return f"{self.username}@{data['domain']}" if data else ''
-
+        return f'{self.username}@{self.domain}'
 
     @login_required
     def send_mail(self, *, recipient: str, subject: str, body: str) -> None:
-        if not re.match(r'^[\w\.-]+@[\w\.-]+$', recipient):
+        regexp = r'[\w\.-]+@[\w\.-]+'
+        if not re.fullmatch(regexp, recipient):
             raise MailError('Recipient has invalid mail format', self)
         mail = Mail(self.sender, recipient, subject, body)
         mail.send()
