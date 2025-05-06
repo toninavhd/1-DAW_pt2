@@ -77,11 +77,12 @@ class MailServer(DbHandler):
 
     @login_required
     def send_mail(self, *, recipient: str, subject: str, body: str) -> None:
-        regexp = r'[\w\.-]+@[\w\.-]+'
-        if not re.fullmatch(regexp, recipient):
+        regexp = r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+'
+        if re.fullmatch(regexp, recipient, re.I):
+            mail = Mail(self.sender, recipient, subject, body)
+            mail.send()
+        else:
             raise MailError('Recipient has invalid mail format', self)
-        mail = Mail(self.sender, recipient, subject, body)
-        mail.send()
 
     @login_required
     def get_emails(self, sent: bool = True):
