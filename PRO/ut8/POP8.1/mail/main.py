@@ -100,3 +100,4 @@ class MailError(Exception):
         super().__init__(message)
         db_handler.con.close()
         
+##c
