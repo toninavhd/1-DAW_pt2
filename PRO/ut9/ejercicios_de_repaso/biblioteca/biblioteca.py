@@ -39,10 +39,6 @@ def create(db_path: str):
     con.commit()
     con.close()
 
-# ************************************************************
-# Member
-# ************************************************************
-
 class Member:
     con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
@@ -92,9 +88,6 @@ class Member:
             raise ValueError(f'Member with id {member_id} does not exist!')
         return Member(row['email'], row['name'], row['surname'], row['id'])
 
-# ************************************************************
-# Book
-# ************************************************************
 
 class Book:
     con = sqlite3.connect(DB_PATH)
@@ -137,10 +130,6 @@ class Book:
         if not row:
             raise ValueError(f'Book with id {book_id} does not exist!')
         return Book(row['title'], row['author'], row['available'], row['id'])
-
-# ************************************************************
-# Loan
-# ************************************************************
 
 class Loan:
     con = sqlite3.connect(DB_PATH)
