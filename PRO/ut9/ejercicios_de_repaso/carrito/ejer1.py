@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 import sqlite3
 
-DB_PATH = 'carrito.db'
+DB_PATH = 'ecommerce.db'
 
 def create(db_path: str):
 
