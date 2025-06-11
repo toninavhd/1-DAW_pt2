@@ -168,7 +168,6 @@
             font-size: 0.9rem;
         }
         
-
         .icon {
             display: inline-block;
             width: 24px;
@@ -191,7 +190,7 @@
         }
         
         .icon-weakness {
-            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>');
+            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>');
         }
         
         .icon-opportunity {
@@ -201,16 +200,85 @@
         .icon-threat {
             mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"/></svg>');
         }
+
+        
+        .workers-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: var(--shadow);
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .workers-table th, .workers-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .workers-table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .workers-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .workers-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .workers-table .total-row {
+            font-weight: bold;
+            background-color: var(--light-color);
+        }
+        
+        .dropdown-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .dropdown-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        
+        .dropdown-content.show {
+            display: block;
+        }
+        
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>¿Que se necesita para trabajar en un SOC? </h1>
-			<p>Centro de Operaciones de Seguridad (SOC) es un equipo o función centralizada que se dedica a mejorar la ciberseguridad de una organización. El SOC se encarga de prevenir, detectar y responder a las amenazas cibernéticas, utilizando herramientas y procesos para monitorizar, analizar y responder a incidentes de seguridad.</p>
-			<br>
-			<p class="subtitle">Soft Skills y Análisis DAFO Personal</p>
-
+            <p>Centro de Operaciones de Seguridad (SOC) es un equipo o función centralizada que se dedica a mejorar la ciberseguridad de una organización. El SOC se encarga de prevenir, detectar y responder a las amenazas cibernéticas, utilizando herramientas y procesos para monitorizar, analizar y responder a incidentes de seguridad.</p>
+            <br>
+            <p class="subtitle">Soft Skills y Análisis DAFO Personal</p>
         </header>
         
         <div class="main-content">
@@ -313,10 +381,111 @@
                 </div>
             </section>
         </div>
+
+        <!--tabla de trabajadores -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon icon-soft-skills"></span>
+                Control de Horas Trabajadas
+            </h2>
+            
+            <div class="dropdown-container">
+                <button onclick="toggleDropdown()" class="dropdown-btn">Mostrar Trabajadores</button>
+                <div id="workersDropdown" class="dropdown-content">
+                    <p><strong>Lista de Trabajadores:</strong></p>
+                    <ul style="margin-top: 8px; margin-left: 20px;">
+                        <li>Juan Pérez</li>
+                        <li>María García</li>
+                        <li>Carlos López</li>
+                        <li>Ana Martínez</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <table class="workers-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Total Horas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Christian Pérez</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>37</td>
+                    </tr>
+                    <tr>
+                        <td>Eduardo García</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td>Borja López</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>37</td>
+                    </tr>
+                    <tr>
+                        <td>Unai Mata</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>38</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>Total</td>
+                        <td>29</td>
+                        <td>31</td>
+                        <td>31</td>
+                        <td>30</td>
+                        <td>29</td>
+                        <td>150</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
         
         <footer>
             <p>© 2023 Mi Perfil Profesional | Diseñado para oportunidades laborales</p>
         </footer>
     </div>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("workersDropdown").classList.toggle("show");
+        }
+
+        // Cerrar el desplegable si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
